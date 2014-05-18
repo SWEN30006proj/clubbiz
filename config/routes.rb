@@ -1,4 +1,6 @@
 Clubbiz::Application.routes.draw do
+  resources :reservations
+  get 'reservations/by_member/:id' => 'reservations#view_by_member', as: 'view_by_member'
   resources :people
 
   # The priority is based upon order of creation: first created -> highest priority.

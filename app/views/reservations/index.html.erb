@@ -1,0 +1,36 @@
+<h1>Listing reservations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Event</th>
+      <th>Member</th>
+      <th>Ticket type</th>
+      <th>Ticket quantity</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @reservations.each do |reservation| %>
+      <tr>
+        <td><%= reservation.code %></td>
+        <td><%= reservation.event_id %></td>
+        <td><%= reservation.member_id %></td>
+        <td><%= reservation.ticket_type %></td>
+        <td><%= reservation.ticket_quantity %></td>
+        <td><%= link_to 'Show', reservation %></td>
+        <td><%= link_to 'Edit', edit_reservation_path(reservation) %></td>
+        <td><%= link_to 'Destroy', reservation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Reservation', new_reservation_path %>
+<%= link_to 'Search by member', view_by_member_path(12) %> <!--set member_id here once login is done-->

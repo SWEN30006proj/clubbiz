@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Code:</strong>
+  <%= @reservation.code %>
+</p>
+
+<p>
+  <strong>Event:</strong>
+  <%= @reservation.event_id %>
+</p>
+
+<p>
+  <strong>Member:</strong>
+  <%= @reservation.member_id %>
+</p>
+
+<p>
+  <strong>Ticket type:</strong>
+  <%= @reservation.ticket_type %>
+</p>
+
+<p>
+  <strong>Ticket quantity:</strong>
+  <%= @reservation.ticket_quantity %>
+</p>
+
+<p id="message">Congratulation! You have successfully place an reservation. Please proceed to [payment gateway] to may payment.</p>
+<%= link_to 'Edit', edit_reservation_path(@reservation) %> |
+<%= link_to 'Back', reservations_path %>
