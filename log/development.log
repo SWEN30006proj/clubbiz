@@ -6781,3 +6781,3746 @@ ActionController::RoutingError (No route matches [GET] "/images/Head_logo.png"):
   Rendered /home/jack/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (3.6ms)
   Rendered /home/jack/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
   Rendered /home/jack/.rvm/gems/ruby-2.1.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (47.7ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 18:53:18 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 114ms (Views: 103.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 18:53:19 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 18:53:19 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 18:53:19 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 18:53:19 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 18:53:19 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 18:53:19 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 18:53:19 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 18:53:19 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 18:53:19 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 18:53:19 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 18:53:19 +1000
+
+
+Started GET "/images/Head_logo.png" for 127.0.0.1 at 2014-05-24 18:53:19 +1000
+
+ActionController::RoutingError (No route matches [GET] "/images/Head_logo.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (49.0ms)
+
+
+Started GET "/reservations/view_by_member/%23%3CActiveRecord::Relation::ActiveRecord_Relation_Reservation:0x0000000824ad80%3E" for 127.0.0.1 at 2014-05-24 18:55:02 +1000
+Processing by ReservationsController#view_by_member as HTML
+  Parameters: {"id"=>"#<ActiveRecord::Relation::ActiveRecord_Relation_Reservation:0x0000000824ad80>"}
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."member_id" = 12[0m
+  Rendered reservations/view_by_member.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 11ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/Head_logo.png" for 127.0.0.1 at 2014-05-24 18:55:02 +1000
+
+ActionController::RoutingError (No route matches [GET] "/images/Head_logo.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (37.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 18:55:04 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/images/Head_logo.png" for 127.0.0.1 at 2014-05-24 18:55:04 +1000
+
+ActionController::RoutingError (No route matches [GET] "/images/Head_logo.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (36.0ms)
+
+
+Started GET "/images/Head_logo.png" for 127.0.0.1 at 2014-05-24 18:56:07 +1000
+
+ActionController::RoutingError (No route matches [GET] "/images/Head_logo.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (37.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 18:58:25 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 18:58:25 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 18:58:25 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 18:58:25 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 18:58:25 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 18:58:25 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 18:58:25 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 18:58:25 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 18:58:25 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 18:58:25 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 18:58:25 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 18:58:25 +1000
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 18:58:25 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:12:16 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:12:17 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:12:17 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:12:17 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:12:17 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:12:17 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:12:17 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:12:17 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:12:17 +1000
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 19:12:17 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:12:17 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 19:12:17 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 19:12:17 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:13:13 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:13:13 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:13:13 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:13:13 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:13:13 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:13:13 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:13:13 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:13:13 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:13:13 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:13:13 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 19:13:13 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 19:13:13 +1000
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 19:13:13 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:16:13 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:16:13 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:16:13 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:16:13 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:16:13 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:16:13 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:16:13 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:16:13 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:16:13 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:16:13 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 19:16:14 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 19:16:14 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 19:16:14 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (39.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:20:42 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 53ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:20:42 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:20:42 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:20:42 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:20:42 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:20:42 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:20:42 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:20:42 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:20:42 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 19:20:42 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 19:20:42 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:20:42 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 19:20:42 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (36.0ms)
+
+
+Started GET "/reservations/view_by_member/%23%3CActiveRecord::Relation::ActiveRecord_Relation_Reservation:0x00000003856710%3E" for 127.0.0.1 at 2014-05-24 19:20:54 +1000
+Processing by ReservationsController#view_by_member as HTML
+  Parameters: {"id"=>"#<ActiveRecord::Relation::ActiveRecord_Relation_Reservation:0x00000003856710>"}
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations" WHERE "reservations"."member_id" = 12
+  Rendered reservations/view_by_member.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations/view_by_member/%23%3CActiveRecord::Relation::ActiveRecord_Relation_Reservation:0x00000003856710%3E" for 127.0.0.1 at 2014-05-24 19:20:57 +1000
+Processing by ReservationsController#view_by_member as HTML
+  Parameters: {"id"=>"#<ActiveRecord::Relation::ActiveRecord_Relation_Reservation:0x00000003856710>"}
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."member_id" = 12[0m
+  Rendered reservations/view_by_member.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:22:43 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:22:43 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:22:43 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:22:43 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:22:43 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:22:43 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:22:43 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:22:43 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:22:43 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:22:43 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 19:22:43 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 19:22:43 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:24:05 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 10ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:24:05 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:24:05 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:24:05 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:24:05 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:24:05 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:24:05 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:24:05 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:24:05 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:24:05 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 19:24:05 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 19:24:05 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 19:24:05 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (39.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:25:18 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations/view_by_member/%23%3CActiveRecord::Relation::ActiveRecord_Relation_Reservation:0x00000003847c38%3E" for 127.0.0.1 at 2014-05-24 19:25:32 +1000
+Processing by ReservationsController#view_by_member as HTML
+  Parameters: {"id"=>"#<ActiveRecord::Relation::ActiveRecord_Relation_Reservation:0x00000003847c38>"}
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."member_id" = 12[0m
+  Rendered reservations/view_by_member.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:25:32 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:25:32 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:25:32 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:25:32 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:25:32 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:25:32 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:25:32 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:25:32 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:25:32 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 19:25:32 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 19:25:32 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 19:25:32 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (38.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:25:34 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (1.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:26:08 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:29:04 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:29:04 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:29:04 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:29:04 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:29:04 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:29:04 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:29:04 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:29:04 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:29:04 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:29:04 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 19:29:04 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 19:29:04 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 19:29:04 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (38.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:29:07 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (1.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:29:08 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (1.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:29:09 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 23ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:29:09 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:29:10 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (1.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:31:27 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:31:27 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:31:27 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:31:27 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:31:27 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:31:27 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:31:27 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:31:27 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:31:27 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:31:27 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 19:31:27 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 19:31:27 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:32:04 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:32:04 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:32:04 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:32:04 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:32:04 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:32:04 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:32:04 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:32:04 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:32:04 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:32:04 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 19:32:04 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 19:32:04 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:32:06 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:32:06 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:34:10 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:34:10 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:34:10 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:34:10 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:34:10 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:34:10 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:34:10 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:34:10 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:34:10 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:34:10 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 19:34:10 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 19:34:10 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:34:16 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:34:16 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:34:16 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:34:16 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:34:16 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:34:16 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:34:16 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:34:16 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:34:16 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:34:16 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 19:34:16 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 19:34:16 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:34:16 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:34:22 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:34:22 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:34:22 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:34:22 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:34:22 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:34:22 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:34:22 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 19:34:22 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:34:22 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 19:34:22 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:34:22 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:34:22 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:34:26 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:34:26 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:34:27 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:34:28 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:34:28 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:34:29 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:34:29 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:34:29 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (1.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:34:29 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:37:58 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 39ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:37:58 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:37:58 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:37:58 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:37:58 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:37:58 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:37:58 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:37:58 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:37:58 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:37:58 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 19:37:58 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 19:37:58 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:39:19 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:39:19 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:39:19 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:39:19 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:39:19 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:39:19 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:39:19 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:39:19 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:39:19 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:39:19 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 19:39:19 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 19:39:19 +1000
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 19:39:19 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:39:19 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:42:22 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 32ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:42:22 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:42:22 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:42:22 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:42:22 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:42:22 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:42:22 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:42:22 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:42:22 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:42:22 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 19:42:22 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 19:42:22 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 19:42:22 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (39.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:46:04 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 19ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:46:04 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:46:04 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:46:04 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:46:04 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:46:04 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:46:04 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:46:04 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:46:04 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:46:04 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 19:46:04 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 19:46:04 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 19:46:04 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (40.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:47:24 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:47:24 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:47:24 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:47:24 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:47:24 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:47:24 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:47:24 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:47:24 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:47:24 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:47:24 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 19:47:24 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 19:47:24 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 19:47:24 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (40.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-24 19:48:08 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/railties-4.0.4/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2014-05-24 19:48:17 +1000
+
+ActionController::RoutingError (No route matches [GET] "/people"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (37.0ms)
+
+
+Started GET "/people/index" for 127.0.0.1 at 2014-05-24 19:48:21 +1000
+
+ActionController::RoutingError (No route matches [GET] "/people/index"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (36.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:48:30 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (1.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:48:30 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:48:30 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:48:30 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:48:30 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:48:30 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:48:30 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:48:30 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:48:30 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:48:30 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 19:48:30 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 19:48:30 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 19:48:31 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (38.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2014-05-24 19:48:34 +1000
+
+ActionController::RoutingError (No route matches [GET] "/people"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (37.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-24 19:48:50 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/railties-4.0.4/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:48:56 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 19:48:57 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (38.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 19:49:35 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 19:49:35 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 19:49:35 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 19:49:35 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 19:49:35 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 19:49:35 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 19:49:35 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 19:49:35 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 19:49:35 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 19:49:35 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 19:49:35 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 19:49:35 +1000
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 19:49:35 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 19:49:35 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (38.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-05-24 21:29:53 +1000
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (37.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2014-05-24 21:30:34 +1000
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (43.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2014-05-24 21:30:37 +1000
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (1.0ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 15ms (Views: 11.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2014-05-24 21:30:37 +1000
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.0ms)[0m  SELECT "people".* FROM "people"
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 21:30:37 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 21:30:37 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 21:30:37 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 21:30:37 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 21:30:37 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 21:30:37 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 21:30:37 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 21:30:37 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 21:30:37 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 21:30:37 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 21:30:37 +1000
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 21:30:37 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 21:30:37 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (43.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2014-05-24 21:35:30 +1000
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.0ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 31ms (Views: 31.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 21:35:30 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 21:35:30 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 21:35:30 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 21:35:30 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 21:35:30 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 21:35:30 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 21:35:30 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 21:35:30 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 21:35:30 +1000
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 21:35:30 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 21:35:30 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 21:35:30 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 21:35:30 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (45.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2014-05-24 21:38:18 +1000
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.0ms)[0m  SELECT "people".* FROM "people"
+  Rendered people/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 21:38:18 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 21:38:18 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 21:38:18 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 21:38:18 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 21:38:18 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:18 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:18 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:18 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:18 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:18 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:18 +1000
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 21:38:18 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 21:38:18 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (59.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2014-05-24 21:38:34 +1000
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.0ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 21:38:34 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 21:38:34 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:34 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:34 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 21:38:34 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 21:38:34 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 21:38:34 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:34 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:34 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:34 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:34 +1000
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 21:38:34 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 21:38:34 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (45.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2014-05-24 21:38:37 +1000
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (1.0ms)[0m  SELECT "people".* FROM "people"
+  Rendered people/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 21:38:37 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:37 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:37 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 21:38:37 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 21:38:37 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 21:38:37 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 21:38:37 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:37 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:37 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:37 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:37 +1000
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 21:38:37 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 21:38:37 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (43.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2014-05-24 21:38:53 +1000
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (1.0ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 21:38:53 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 21:38:53 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 21:38:53 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 21:38:53 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:53 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 21:38:53 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:53 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:53 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:53 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:53 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 21:38:53 +1000
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 21:38:53 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 21:38:53 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (42.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2014-05-24 21:39:02 +1000
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.0ms)[0m  SELECT "people".* FROM "people"
+  Rendered people/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 21:39:02 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 21:39:02 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 21:39:02 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 21:39:02 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 21:39:02 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 21:39:02 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 21:39:02 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 21:39:02 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 21:39:02 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 21:39:02 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 21:39:02 +1000
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 21:39:02 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 21:39:02 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (44.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2014-05-24 21:39:04 +1000
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.0ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 21:39:04 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 21:39:04 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 21:39:04 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 21:39:04 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 21:39:04 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 21:39:04 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 21:39:04 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 21:39:04 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 21:39:04 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 21:39:04 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 21:39:04 +1000
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 21:39:04 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 21:39:04 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (45.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2014-05-24 21:39:10 +1000
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.0ms)[0m  SELECT "people".* FROM "people"
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 21:39:10 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 21:39:10 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 21:39:10 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 21:39:10 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 21:39:10 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 21:39:10 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 21:39:10 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 21:39:10 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 21:39:10 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 21:39:10 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 21:39:10 +1000
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 21:39:10 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 21:39:10 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (49.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2014-05-24 21:40:09 +1000
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (1.0ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 21:40:09 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 21:40:09 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 21:40:09 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 21:40:09 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 21:40:09 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 21:40:09 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 21:40:09 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 21:40:09 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 21:40:09 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 21:40:09 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 21:40:09 +1000
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 21:40:09 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 21:40:09 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (18.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (60.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2014-05-24 21:40:51 +1000
+Processing by PeopleController#index as HTML
+  [1m[35mPerson Load (0.0ms)[0m  SELECT "people".* FROM "people"
+  Rendered people/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 22ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 21:40:51 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 21:40:51 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 21:40:51 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 21:40:51 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 21:40:51 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 21:40:51 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 21:40:51 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 21:40:51 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 21:40:51 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 21:40:51 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 21:40:51 +1000
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 21:40:51 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 21:44:47 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (14.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 89ms (Views: 64.0ms | ActiveRecord: 14.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 21:44:47 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 21:44:47 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 21:44:47 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 21:44:47 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 21:44:47 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 21:44:47 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 21:44:47 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 21:44:47 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 21:44:47 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 21:44:47 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 21:44:47 +1000
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 21:44:47 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 21:53:30 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (1.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 21:53:30 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 21:53:30 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 21:53:30 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 21:53:30 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 21:53:30 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 21:53:30 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 21:53:30 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 21:53:30 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 21:53:31 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 21:53:31 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 21:53:31 +1000
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 21:53:31 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:00:14 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 18ms (Views: 18.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 22:00:14 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 22:00:14 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 22:00:14 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 22:00:14 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 22:00:14 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 22:00:15 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 22:00:15 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 22:00:15 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 22:00:15 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 22:00:15 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 22:00:15 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 22:00:15 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (49.0ms)
+
+
+Started GET "/reservations" for 192.168.0.103 at 2014-05-24 22:00:54 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (1.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 192.168.0.103 at 2014-05-24 22:00:54 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 192.168.0.103 at 2014-05-24 22:00:54 +1000
+
+
+Started GET "/assets/people.css?body=1" for 192.168.0.103 at 2014-05-24 22:00:54 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 192.168.0.103 at 2014-05-24 22:00:54 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 192.168.0.103 at 2014-05-24 22:00:54 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 192.168.0.103 at 2014-05-24 22:00:54 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 192.168.0.103 at 2014-05-24 22:00:55 +1000
+
+
+Started GET "/assets/people.js?body=1" for 192.168.0.103 at 2014-05-24 22:00:55 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 192.168.0.103 at 2014-05-24 22:00:55 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 192.168.0.103 at 2014-05-24 22:00:55 +1000
+
+
+Started GET "/assets/application.js?body=1" for 192.168.0.103 at 2014-05-24 22:00:55 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 192.168.0.103 at 2014-05-24 22:00:56 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (41.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:01:53 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 22:01:53 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 22:01:53 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 22:01:53 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 22:01:53 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 22:01:53 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 22:01:53 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 22:01:53 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 22:01:53 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 22:01:53 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 22:01:53 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 22:01:53 +1000
+
+
+Started GET "/img/glyphicons-halflings.png" for 127.0.0.1 at 2014-05-24 22:01:53 +1000
+
+ActionController::RoutingError (No route matches [GET] "/img/glyphicons-halflings.png"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (43.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:02:36 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 10ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 22:02:36 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 22:02:36 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 22:02:36 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 22:02:36 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 22:02:36 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 22:02:36 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 22:02:36 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 22:02:36 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 22:02:36 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 22:02:36 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 22:02:36 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:03:00 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 22:03:00 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 22:03:00 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 22:03:00 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 22:03:00 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 22:03:00 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 22:03:00 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 22:03:00 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 22:03:00 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 22:03:00 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 22:03:00 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 22:03:00 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:03:51 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 22:03:51 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 22:03:51 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 22:03:51 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 22:03:51 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 22:03:51 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 22:03:51 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 22:03:51 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 22:03:51 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 22:03:51 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 22:03:51 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 22:03:51 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:03:52 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 22:03:52 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 22:03:52 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 22:03:52 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 22:03:52 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 22:03:52 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 22:03:52 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 22:03:52 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 22:03:52 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 22:03:52 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 22:03:52 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 22:03:52 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:05:22 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (1.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 22:05:22 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 22:05:22 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 22:05:22 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 22:05:22 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 22:05:22 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 22:05:22 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 22:05:22 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 22:05:22 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 22:05:22 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 22:05:22 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 22:05:22 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:06:44 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 16ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 22:06:44 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 22:06:44 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 22:06:44 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 22:06:44 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 22:06:44 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 22:06:44 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 22:06:44 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 22:06:44 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 22:06:44 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 22:06:44 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:06:56 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 22:06:56 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 22:06:56 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 22:06:56 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 22:06:56 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 22:06:56 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 22:06:56 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 22:06:56 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 22:06:56 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 22:06:56 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 22:06:56 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:07:03 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 22:07:03 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 22:07:03 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 22:07:03 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 22:07:03 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 22:07:03 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 22:07:03 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 22:07:03 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 22:07:03 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 22:07:03 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 22:07:03 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:07:29 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 22:07:29 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 22:07:29 +1000
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-05-24 22:07:29 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 22:07:29 +1000
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-05-24 22:07:29 +1000
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-05-24 22:07:29 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 22:07:29 +1000
+
+
+Started GET "/assets/people.js?body=1" for 127.0.0.1 at 2014-05-24 22:07:29 +1000
+
+
+Started GET "/assets/reservations.js?body=1" for 127.0.0.1 at 2014-05-24 22:07:29 +1000
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-05-24 22:07:29 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:07:51 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 9ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 22:07:51 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 22:07:51 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 22:07:51 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 22:07:51 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:08:44 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:09:43 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 21ms (Views: 21.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:11:01 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 192.168.0.103 at 2014-05-24 22:11:56 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 5ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:12:26 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 22:12:26 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:14:13 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 22:14:13 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:16:16 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 22:16:16 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:17:20 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:21:53 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:22:38 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:22:40 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:22:59 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:23:10 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:24:10 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 20ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:24:26 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 8ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:24:44 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 192.168.0.103 at 2014-05-24 22:24:57 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 192.168.0.103 at 2014-05-24 22:25:09 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (1.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6ms (Views: 4.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/reservations/view_by_member/%23%3CActiveRecord::Relation::ActiveRecord_Relation_Reservation:0x00000003925bf0%3E" for 127.0.0.1 at 2014-05-24 22:25:25 +1000
+Processing by ReservationsController#view_by_member as HTML
+  Parameters: {"id"=>"#<ActiveRecord::Relation::ActiveRecord_Relation_Reservation:0x00000003925bf0>"}
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations" WHERE "reservations"."member_id" = 12[0m
+  Rendered reservations/view_by_member.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:25:27 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:27:08 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:36:04 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:36:43 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:37:43 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (1.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:38:22 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (1.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:45:20 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:46:06 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:46:30 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/reservations" for 127.0.0.1 at 2014-05-24 22:46:32 +1000
+Processing by ReservationsController#create as HTML
+  Parameters: {"user"=>{"username"=>"", "password"=>"[FILTERED]"}, "commit"=>"Sign In"}
+Can't verify CSRF token authenticity
+Completed 422 Unprocessable Entity in 1ms
+
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  actionpack (4.0.4) lib/action_controller/metal/request_forgery_protection.rb:166:in `handle_unverified_request'
+  actionpack (4.0.4) lib/action_controller/metal/request_forgery_protection.rb:173:in `handle_unverified_request'
+  actionpack (4.0.4) lib/action_controller/metal/request_forgery_protection.rb:180:in `verify_authenticity_token'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:377:in `_run__1521117585__process_action__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.4) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__1704731307__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  C:/Ruby200-x64/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered C:/Ruby200-x64/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (30.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:46:53 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:48:39 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:48:40 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:48:49 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:52:07 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 6ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:54:30 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 22:59:21 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 22:59:21 +1000
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2014-05-24 22:59:21 +1000
+
+
+Started GET "/assets/people.css?body=1" for 127.0.0.1 at 2014-05-24 22:59:21 +1000
+
+
+Started GET "/assets/reservations.css?body=1" for 127.0.0.1 at 2014-05-24 22:59:21 +1000
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-05-24 22:59:21 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 23:00:58 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (1.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 22ms (Views: 19.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 23:00:59 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 23:01:26 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 14ms (Views: 12.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 23:01:26 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 23:01:38 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (0.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 23:01:38 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 23:02:04 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 23:02:04 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 23:02:45 +1000
+Processing by ReservationsController#index as HTML
+  [1m[35mReservation Load (1.0ms)[0m  SELECT "reservations".* FROM "reservations"
+  Rendered reservations/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/Head_logo.png" for 127.0.0.1 at 2014-05-24 23:02:46 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 23:02:46 +1000
+
+
+Started GET "/reservations" for 127.0.0.1 at 2014-05-24 23:03:27 +1000
+Processing by ReservationsController#index as HTML
+  [1m[36mReservation Load (0.0ms)[0m  [1mSELECT "reservations".* FROM "reservations"[0m
+  Rendered reservations/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 8ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-24 23:03:27 +1000
