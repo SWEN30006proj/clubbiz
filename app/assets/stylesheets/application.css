@@ -13,6 +13,11 @@
  */
 
 p.brand {font-family:"Comic Sans MS",Times,serif;}
+img.header_logo {
+    height: 80%;
+    width: auto;
+}
+
 .navbar-default {
     background-color: #008193;
     border-color: #005662;
@@ -20,6 +25,7 @@ p.brand {font-family:"Comic Sans MS",Times,serif;}
 .navbar-default .navbar-brand {
     color: #ecf0f1;
 }
+
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
     color: #ff8000;
