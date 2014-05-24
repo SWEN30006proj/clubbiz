@@ -1,8 +1,7 @@
 class ReservationsController < ApplicationController
   before_action :set_reservation, only: [:show, :edit, :update, :destroy]
 
-  # GET /reservations/by_member/1
-  # GET /reservations/by_member/1.json
+  #GET /reservations/view_by_member/1
   def view_by_member
     @reservations = Reservation.where(member_id: 12)
   end
