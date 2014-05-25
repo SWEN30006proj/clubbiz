@@ -33,7 +33,7 @@
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
       <li><a href="javascript:void(0)">Events</a></li>
-      <li><a href="javascript:void(0)">Societies</a></li>
+      <li><a href="http://localhost:3000/search/list">Societies</a></li>
       <li class="dropdown">
         <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
         <ul class="dropdown-menu">
@@ -56,15 +56,17 @@
     
     <ul class="nav navbar-nav navbar-right">
       <% if signed_in?
-           @name = current_student.firstname + " " + current_student.lastname
-        else
-           @name = "Guest"
-        end
-      %>
-      <li><a href="javascript:void(0)">Welcome <%=@name%></a></li>
+           @name = current_student.firstname + " " + current_student.lastname%>
+           <li><a href=<%=home_page_student_view_path%> >Welcome <%=@name%></a></li>
+        <%else
+           @name = "Guest"%>
+           <li><a href="javascript:void(0)">Welcome <%=@name%></a></li>
+        <%end%>
+
+
       <li class="dropdown">
         <% unless signed_in?%>
-          <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In/Register <strong class="caret"></strong></a>
           <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
             <!-- Login form here -->
             <!-- <form action="/students/sign_in" method="post" accept-charset="UTF-8">
@@ -110,5 +112,9 @@
 
 <%= yield %>
 
+
+<br/>
+<br/>
+<%= link_to 'Back', :back %>
 </body>
 </html>

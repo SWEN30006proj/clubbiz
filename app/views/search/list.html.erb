@@ -14,7 +14,7 @@
   <tbody>
   <% @clubs_data_all.each do |clubs_datum| %>
       <tr>
-        <td><%= clubs_datum.society_name %></td>
+        <td><a href= <%=home_page_society_view_path%>><%= clubs_datum.society_name %></a></td>
         <td><%= clubs_datum.registration_number %></td>
         <td><%= clubs_datum.club_website %></td>
         <td><%= clubs_datum.president_name %></td>
