@@ -3,6 +3,7 @@ Clubbiz::Application.routes.draw do
   get "home_page/student_edit"
   get "home_page/society_view"
   get "home_page/society_edit"
+  get "home_page/event_view"
   #get "index", to: 'home_page#index', as:'index'
   root 'home_page#index'
   resources :reservations
@@ -21,7 +22,8 @@ Clubbiz::Application.routes.draw do
   resources :studenthomepage
 
   get 'search/index'
-  get 'search/list'
+  get 'search/list_society'
+  get 'search/list_event'
 
 
   resources :maintopics do

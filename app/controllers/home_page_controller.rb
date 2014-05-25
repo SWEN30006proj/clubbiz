@@ -14,4 +14,10 @@ class HomePageController < ApplicationController
   def index
 
   end
+
+  def event_view
+  end
+
+  def event_edit
+  end
 end

@@ -8,12 +8,10 @@ class EventsController < ApplicationController
     @events = Event.all
   end
 
-=begin
   # GET /events/1
   # GET /events/1.json
   def show
   end
-=end
 
   # GET /events/new
   def new

@@ -1,0 +1,29 @@
+<h1> This is the list of events </h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Event Name</th>
+    <th>Start time</th>
+    <th>Finish time</th>
+    <th>Venue</th>
+    <th>Society</th>
+    <th colspan="23"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @events_data_all.each do |events_datum| %>
+    <tr>
+      <td><a href= <%=home_page_event_view_path%>><%= events_datum.title %></a></td>
+      <td><%= events_datum.start_time %></td>
+      <td><%= events_datum.finish_time %></td>
+      <td><%= events_datum.venue %></td>
+      <td><%= events_datum.societies_shared_with %></td>
+      <br>
+    </tr><br>
+  <% end %>
+  </tbody>
+</table>
+
+

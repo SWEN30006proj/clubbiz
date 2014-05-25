@@ -38,8 +38,12 @@ class SearchController < ApplicationController
 
 
 
-  def list
+  def list_society
     @clubs_data_all = Society.all
+  end
+
+  def list_event
+    @events_data_all = Event.all
   end
 
 
