@@ -1,9 +1,18 @@
 Clubbiz::Application.routes.draw do
+  get "home_page/student_view"
+  get "home_page/student_edit"
+  get "home_page/society_view"
+  get "home_page/society_edit"
   resources :reservations
-  resources :people
+  #resources :people
   get 'reservations/view_by_member/:id', to: 'reservations#view_by_member', as: 'view_by_member'
 
-
+  get 'events/share_with_societies'
+  post 'events/share_with_societies'
+  post 'events/new'
+  get 'societies/confirmation'
+  resources :societies
+  resources :events
 
   devise_for :students
   resources :startuppage
