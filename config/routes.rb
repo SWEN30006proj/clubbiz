@@ -3,6 +3,19 @@ Clubbiz::Application.routes.draw do
   resources :people
   get 'reservations/view_by_member/:id', to: 'reservations#view_by_member', as: 'view_by_member'
 
+
+
+  devise_for :students
+  resources :startuppage
+ resources :studenthomepage
+
+
+  resources :maintopics do
+    resources :subtopics
+  end
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
