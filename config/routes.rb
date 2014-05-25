@@ -3,6 +3,14 @@ Clubbiz::Application.routes.draw do
   resources :people
   get 'reservations/view_by_member/:id', to: 'reservations#view_by_member', as: 'view_by_member'
 
+  get 'events/share_with_societies'
+  post 'events/share_with_societies'
+  post 'events/new'
+  get 'societies/confirmation'
+  resources :societies
+  resources :events
+  
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

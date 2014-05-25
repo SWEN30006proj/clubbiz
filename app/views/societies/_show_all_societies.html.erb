@@ -1,0 +1,51 @@
+
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>Society name</th>
+        <!--<th>Registration number</th>-->
+        <th>Club website</th>
+        <th>Club nickname</th>
+        <!--<th>Password</th>-->
+        <th>President name</th>
+        <!--<th>President phone number</th>-->
+        <!--<th>President email</th>-->
+        <th>Treasurer name</th>
+        <!--<th>Treasurer phone number</th>-->
+        <!--<th>Treasurer email</th>-->
+        <th>Club biz administrator name</th>
+        <!--<th>Club biz administrator phone number</th>-->
+        <!--<th>Club biz administrator email</th>-->
+        <!--<th></th>-->
+        <!--<th></th>-->
+        <!--<th></th>-->
+    </tr>
+    </thead>
+
+    <tbody>
+    <% Society.all.each do |society| %>
+    <tr>
+        <td align="center"><%= society.society_name %></td>
+        <!--<td><%= society.registration_number %></td>-->
+        <td align="center"><%= society.club_website %></td>
+        <td align="center"><%= society.club_nickname %></td>
+        <!--<td><%= society.password %></td>-->
+        <td align="center"><%= society.president_name %></td>
+        <!--<td><%= society.president_phone_number %></td>-->
+        <!--<td><%= society.president_email %></td>-->
+        <td align="center"><%= society.treasurer_name %></td>
+        <!--<td><%= society.treasurer_phone_number %></td>-->
+        <!--<td><%= society.treasurer_email %></td>-->
+        <td align="center"><%= society.club_biz_administrator_name %></td>
+        <!--<td><%= society.club_biz_administrator_phone_number %></td>-->
+        <!--<td><%= society.club_biz_administrator_email %></td>-->
+        <!--<td><%= link_to 'Show', society %></td>-->
+        <!--<td><%= link_to 'Edit', edit_society_path(society) %></td>-->
+        <!--<td><%= link_to 'Destroy', society, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+    </tr>
+    <% end %>
+    </tbody>
+</table>
+
+<br>

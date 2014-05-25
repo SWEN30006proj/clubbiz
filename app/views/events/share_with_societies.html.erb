@@ -1,0 +1,14 @@
+<h1> Societies to Share with </h1>
+
+<%#= render :partial => '/societies/show_all_societies' %>
+
+<%= form_tag new_event_path do %>
+
+    <% Society.all.each do |society| %>
+        <%=  society.society_name %>
+        <%= check_box_tag 'societies[]', society.id %><br/>
+    <% end %>
+
+    <%= submit_tag "confirm" %>
+<% end %>
+

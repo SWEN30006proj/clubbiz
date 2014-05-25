@@ -1,0 +1,53 @@
+
+<table border="1" padding="10">
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Start time</th>
+    <th>Finish time</th>
+    <th>Venue</th>
+    <th>Event type</th>
+    <th>Event url</th>
+    <th>Images</th>
+    <!--<th>Max num tickets</th>-->
+    <th>Ticket price</th>
+    <th>Ticket start date time</th>
+    <th>Ticket end date time</th>
+    <th>Ticket purchase pickup information</th>
+    <th>Societies shared with</th>
+    <!--      <th></th>
+          <th></th>
+          <th></th>-->
+  </tr>
+  </thead>
+
+  <tbody>
+  <% Event.all.each do |event| %>
+      <tr>
+        <td><%= event.title %></td>
+        <td><%= event.start_time %></td>
+        <td><%= event.finish_time %></td>
+        <td><%= event.venue %></td>
+        <td><%= event.event_type %></td>
+        <td>
+          <% event_url = "<a href=\"" + event.event_url + "\">" + event.event_url + "</a>" %>
+          <%= event_url.html_safe %>
+        </td>
+        <td><%= image_tag event.image_urls %></td>
+        <!--<td><%= event.max_num_tickets %></td>-->
+        <td><%= event.ticket_price %></td>
+        <td><%= event.ticket_start_date_time %></td>
+        <td><%= event.ticket_end_date_time %></td>
+        <td><%= event.ticket_purchase_pickup_information %></td>
+        <td>
+          <%= display_society_names_from_id(event.societies_shared_with) %>
+        </td>
+        <!--        <td><%= link_to 'Show', event %></td>
+        <td><%= link_to 'Edit', edit_event_path(event) %></td>
+        <td><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></td>-->
+      </tr>
+  <% end %>
+  </tbody>
+</table>
+
+<br>
