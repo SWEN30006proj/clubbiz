@@ -11379,6 +11379,1455 @@ ActionController::RoutingError (No route matches [GET] "/startuppage"):
   Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (196.0ms)
 
 
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 17:26:17 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 62ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 17:26:17 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 17:26:17 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 17:28:00 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 413ms (Views: 305.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 17:28:01 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 17:28:01 +1000
+
+
+Started GET "/students/sign_in" for 127.0.0.1 at 2014-05-25 17:28:35 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (228.0ms)
+Completed 200 OK in 406ms (Views: 290.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 17:28:36 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 17:28:36 +1000
+
+
+Started GET "/home_page/student_view" for 127.0.0.1 at 2014-05-25 17:32:20 +1000
+
+ActionController::RoutingError (No route matches [GET] "/home_page/student_view"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (23.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (25.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (485.0ms)
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 17:34:08 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 58ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 17:34:09 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 17:34:09 +1000
+
+
+Started GET "/students/sign_up" for 127.0.0.1 at 2014-05-25 17:34:10 +1000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 71ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 17:34:11 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 17:34:11 +1000
+
+
+Started POST "/students" for 127.0.0.1 at 2014-05-25 17:34:35 +1000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IQRS7b6CzjAn4Uz0LSiXUtQrvMYTgZ29gsMJnGHfsDA=", "student"=>{"email"=>"songjunyi@gmail.com", "firstname"=>"jerry", "lastname"=>"afdasdf", "school"=>"fasdfasdf", "studentid"=>"asdfasdf", "clubs"=>"fasdfasdf", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mStudent Exists (1.0ms)[0m  [1mSELECT 1 AS one FROM "students" WHERE "students"."email" = 'songjunyi@gmail.com' LIMIT 1[0m
+Binary data inserted for `string` type on column `encrypted_password`
+  [1m[35mSQL (34.0ms)[0m  INSERT INTO "students" ("clubs", "created_at", "email", "encrypted_password", "firstname", "lastname", "school", "studentid", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["clubs", "fasdfasdf"], ["created_at", Sun, 25 May 2014 07:34:36 UTC +00:00], ["email", "songjunyi@gmail.com"], ["encrypted_password", "$2a$10$55QHtabX6UN/180kcDWy4OQBAat7QzaADcOjTu2TdPz3g.AEsscYO"], ["firstname", "jerry"], ["lastname", "afdasdf"], ["school", "fasdfasdf"], ["studentid", "asdfasdf"], ["updated_at", Sun, 25 May 2014 07:34:36 UTC +00:00]]
+  [1m[36m (8.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+Binary data inserted for `string` type on column `last_sign_in_ip`
+Binary data inserted for `string` type on column `current_sign_in_ip`
+  [1m[36mSQL (9.0ms)[0m  [1mUPDATE "students" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "students"."id" = 1[0m  [["last_sign_in_at", Sun, 25 May 2014 07:34:36 UTC +00:00], ["current_sign_in_at", Sun, 25 May 2014 07:34:36 UTC +00:00], ["last_sign_in_ip", "127.0.0.1"], ["current_sign_in_ip", "127.0.0.1"], ["sign_in_count", 1], ["updated_at", Sun, 25 May 2014 07:34:36 UTC +00:00]]
+  [1m[35m (11.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 575ms (ActiveRecord: 63.0ms)
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 17:34:49 +1000
+Processing by StartuppageController#index as HTML
+  [1m[36mStudent Load (1.0ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/studenthomepage
+Completed 302 Found in 57ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/studenthomepage" for 127.0.0.1 at 2014-05-25 17:34:49 +1000
+Processing by StudenthomepageController#index as HTML
+  [1m[35mStudent Load (2.0ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1
+  Rendered studenthomepage/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 69ms (Views: 64.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 17:34:50 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 17:34:50 +1000
+
+
+Started GET "/studenthomepage" for 127.0.0.1 at 2014-05-25 17:36:21 +1000
+Processing by StudenthomepageController#index as HTML
+  [1m[36mStudent Load (2.0ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1[0m
+  Rendered studenthomepage/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 66ms (Views: 61.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 17:36:22 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 17:36:22 +1000
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 17:36:29 +1000
+
+ActionController::RoutingError (No route matches [GET] "/students/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (14.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (338.0ms)
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 18:12:59 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (No route matches [GET] "/students/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (78.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (450.0ms)
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 18:13:04 +1000
+Processing by StartuppageController#index as HTML
+  [1m[35mStudent Load (1.0ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/studenthomepage
+Completed 302 Found in 166ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/studenthomepage" for 127.0.0.1 at 2014-05-25 18:13:04 +1000
+Processing by StudenthomepageController#index as HTML
+  [1m[36mStudent Load (2.0ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1[0m
+  Rendered studenthomepage/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 225ms (Views: 221.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 18:13:05 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 18:13:05 +1000
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 18:13:08 +1000
+
+ActionController::RoutingError (No route matches [GET] "/students/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (17.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (418.0ms)
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 18:13:12 +1000
+Processing by StartuppageController#index as HTML
+  [1m[35mStudent Load (1.0ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/studenthomepage
+Completed 302 Found in 16ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/studenthomepage" for 127.0.0.1 at 2014-05-25 18:13:12 +1000
+Processing by StudenthomepageController#index as HTML
+  [1m[36mStudent Load (1.0ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1[0m
+  Rendered studenthomepage/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 52ms (Views: 49.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 18:13:12 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 18:13:12 +1000
+
+
+Started GET "/studenthomepage" for 127.0.0.1 at 2014-05-25 18:30:19 +1000
+Processing by StudenthomepageController#index as HTML
+  [1m[35mStudent Load (1.0ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1
+  Rendered studenthomepage/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 18:30:19 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 18:30:19 +1000
+
+
+Started GET "/person" for 127.0.0.1 at 2014-05-25 18:33:04 +1000
+
+ActionController::RoutingError (No route matches [GET] "/person"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (402.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2014-05-25 18:33:14 +1000
+Processing by PeopleController#index as HTML
+  [1m[36mPerson Load (0.0ms)[0m  [1mSELECT "people".* FROM "people"[0m
+  Rendered people/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 77ms (Views: 66.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 18:33:14 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 18:33:15 +1000
+
+
+Started GET "/people/new" for 127.0.0.1 at 2014-05-25 18:33:18 +1000
+Processing by PeopleController#new as HTML
+  Rendered people/_form.html.erb (161.0ms)
+  Rendered people/new.html.erb within layouts/application (210.0ms)
+Completed 500 Internal Server Error in 236ms
+
+ActionView::Template::Error (undefined method `age' for #<Person id: nil, name: nil, created_at: nil, updated_at: nil>):
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :age %><br>
+    20:     <%= f.text_field :age %>
+    21:   </div>
+    22:   <div class="actions">
+    23:     <%= f.submit %>
+  app/views/people/_form.html.erb:20:in `block in _app_views_people__form_html_erb___870180900_29397204'
+  app/views/people/_form.html.erb:1:in `_app_views_people__form_html_erb___870180900_29397204'
+  app/views/people/new.html.erb:3:in `_app_views_people_new_html_erb___786119839_29216592'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (99.0ms)
+
+
+Started GET "/people/new" for 127.0.0.1 at 2014-05-25 18:33:36 +1000
+Processing by PeopleController#new as HTML
+  Rendered people/_form.html.erb (12.0ms)
+  Rendered people/new.html.erb within layouts/application (20.0ms)
+Completed 500 Internal Server Error in 42ms
+
+ActionView::Template::Error (undefined method `age' for #<Person id: nil, name: nil, created_at: nil, updated_at: nil>):
+    17:   </div>
+    18:   <div class="field">
+    19:     <%= f.label :age %><br>
+    20:     <%= f.text_field :age %>
+    21:   </div>
+    22:   <div class="actions">
+    23:     <%= f.submit %>
+  app/views/people/_form.html.erb:20:in `block in _app_views_people__form_html_erb___870180900_29397204'
+  app/views/people/_form.html.erb:1:in `_app_views_people__form_html_erb___870180900_29397204'
+  app/views/people/new.html.erb:3:in `_app_views_people_new_html_erb___786119839_29216592'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (119.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-25 18:36:04 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/railties-4.0.4/lib/rails/templates/rails/welcome/index.html.erb (2.0ms)
+Completed 200 OK in 39ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-25 18:36:05 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/railties-4.0.4/lib/rails/templates/rails/welcome/index.html.erb (0.0ms)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-25 18:37:31 +1000
+
+NoMethodError (undefined method `to' for #<ActionDispatch::Routing::Mapper:0x2cebfc0>):
+  config/routes.rb:10:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (5.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (157.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2014-05-25 18:38:08 +1000
+Processing by StartuppageController#index as HTML
+  [1m[35mStudent Load (1.0ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/studenthomepage
+Completed 302 Found in 149ms (ActiveRecord: 54.0ms)
+
+
+Started GET "/studenthomepage" for 127.0.0.1 at 2014-05-25 18:38:09 +1000
+Processing by StudenthomepageController#index as HTML
+  [1m[36mStudent Load (1.0ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1[0m
+  Rendered studenthomepage/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 53ms (Views: 49.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 18:38:09 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 18:38:09 +1000
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 18:38:11 +1000
+
+ActionController::RoutingError (No route matches [GET] "/students/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (13.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (342.0ms)
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 18:38:44 +1000
+
+NoMethodError (undefined method `resoureces' for #<ActionDispatch::Routing::Mapper:0x1e97008>):
+  config/routes.rb:9:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (138.0ms)
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 18:40:02 +1000
+
+NoMethodError (undefined method `resoureces' for #<ActionDispatch::Routing::Mapper:0x2d5a6c0>):
+  config/routes.rb:9:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (154.0ms)
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 18:40:03 +1000
+
+ActionController::RoutingError (No route matches [GET] "/students/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (210.0ms)
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 18:40:04 +1000
+
+ActionController::RoutingError (No route matches [GET] "/students/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (201.0ms)
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 18:40:06 +1000
+
+ActionController::RoutingError (No route matches [GET] "/students/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (41.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (239.0ms)
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 18:40:10 +1000
+
+ActionController::RoutingError (No route matches [GET] "/students/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (6.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (196.0ms)
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 18:40:20 +1000
+
+ActionController::RoutingError (No route matches [GET] "/students/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (14.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (316.0ms)
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 18:40:21 +1000
+
+ActionController::RoutingError (No route matches [GET] "/students/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (16.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (366.0ms)
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 18:53:41 +1000
+Processing by StartuppageController#index as HTML
+  [1m[35mStudent Load (1.0ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/studenthomepage
+Completed 302 Found in 85ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/studenthomepage" for 127.0.0.1 at 2014-05-25 18:53:42 +1000
+Processing by StudenthomepageController#index as HTML
+  [1m[36mStudent Load (1.0ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1[0m
+  Rendered studenthomepage/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 54ms (Views: 51.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 18:53:42 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 18:53:42 +1000
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 18:53:48 +1000
+
+ActionController::RoutingError (No route matches [GET] "/students/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (359.0ms)
+
+
+Started GET "/students/sign_in" for 127.0.0.1 at 2014-05-25 18:53:55 +1000
+Processing by Devise::SessionsController#new as HTML
+  [1m[35mStudent Load (1.0ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 20ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 18:54:00 +1000
+Processing by StartuppageController#index as HTML
+  [1m[36mStudent Load (1.0ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1[0m
+Redirected to http://localhost:3000/studenthomepage
+Completed 302 Found in 14ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/studenthomepage" for 127.0.0.1 at 2014-05-25 18:54:00 +1000
+Processing by StudenthomepageController#index as HTML
+  [1m[35mStudent Load (1.0ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1
+  Rendered studenthomepage/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 45ms (Views: 43.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 18:54:01 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 18:54:01 +1000
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2014-05-25 18:54:03 +1000
+
+ActionController::RoutingError (No route matches [GET] "/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (405.0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2014-05-25 18:55:13 +1000
+
+ActionController::RoutingError (No route matches [GET] "/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (58.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (5.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (415.0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2014-05-25 18:55:15 +1000
+
+ActionController::RoutingError (No route matches [GET] "/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (16.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (376.0ms)
+
+
+Started GET "/sign_out" for 127.0.0.1 at 2014-05-25 18:55:16 +1000
+
+ActionController::RoutingError (No route matches [GET] "/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (17.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (366.0ms)
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 18:55:21 +1000
+
+ActionController::RoutingError (No route matches [GET] "/students/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (348.0ms)
+
+
+Started GET "/studenthomepage" for 127.0.0.1 at 2014-05-25 18:56:00 +1000
+Processing by StudenthomepageController#index as HTML
+  [1m[36mStudent Load (1.0ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1[0m
+  Rendered studenthomepage/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 49ms (Views: 45.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 18:56:00 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 18:56:00 +1000
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 18:56:01 +1000
+
+ActionController::RoutingError (No route matches [GET] "/students/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (432.0ms)
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 18:56:44 +1000
+
+ActionController::RoutingError (No route matches [GET] "/students/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (16.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (434.0ms)
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 18:56:50 +1000
+
+ActionController::RoutingError (No route matches [GET] "/students/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (16.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (390.0ms)
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 18:59:04 +1000
+Processing by StartuppageController#index as HTML
+  [1m[35mStudent Load (1.0ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/studenthomepage
+Completed 302 Found in 13ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/studenthomepage" for 127.0.0.1 at 2014-05-25 18:59:04 +1000
+Processing by StudenthomepageController#index as HTML
+  [1m[36mStudent Load (1.0ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1[0m
+  Rendered studenthomepage/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 59ms (Views: 57.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 18:59:04 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 18:59:04 +1000
+
+
+Started GET "/studenthomepage" for 127.0.0.1 at 2014-05-25 18:59:35 +1000
+Processing by StudenthomepageController#index as HTML
+  [1m[35mStudent Load (1.0ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1
+  Rendered studenthomepage/index.html.erb within layouts/application (20.0ms)
+Completed 500 Internal Server Error in 45ms
+
+ActionView::Template::Error (Invalid :protocol option: "https://localhost:3000/startuppage"):
+    18: 
+    19: <% if signed_in? %>
+    20:     Signed in as <%=current_student.firstname%>. If this is not you?
+    21:     <%=link_to "Sign out", destroy_student_session_url(protocol: 'https://localhost:3000/startuppage'),:method => :delete %>
+    22: <%else%>
+    23: 
+    24:     <%= link_to "New Sign up", new_student_registration_path %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+  app/views/studenthomepage/index.html.erb:21:in `_app_views_studenthomepage_index_html_erb___168891881_23838204'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (160.0ms)
+
+
+Started GET "/studenthomepage" for 127.0.0.1 at 2014-05-25 18:59:59 +1000
+Processing by StudenthomepageController#index as HTML
+  [1m[36mStudent Load (1.0ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1[0m
+  Rendered studenthomepage/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 18:59:59 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 18:59:59 +1000
+
+
+Started GET "/studenthomepage" for 127.0.0.1 at 2014-05-25 19:01:06 +1000
+Processing by StudenthomepageController#index as HTML
+  [1m[35mStudent Load (1.0ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1
+  Rendered studenthomepage/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 65ms (Views: 60.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:01:06 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:01:06 +1000
+
+
+Started GET "/studenthomepage" for 127.0.0.1 at 2014-05-25 19:01:12 +1000
+Processing by StudenthomepageController#index as HTML
+  [1m[36mStudent Load (1.0ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1[0m
+  Rendered studenthomepage/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 58ms (Views: 54.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:01:13 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:01:13 +1000
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 19:01:14 +1000
+
+ActionController::RoutingError (No route matches [GET] "/students/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (16.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (406.0ms)
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 19:02:02 +1000
+
+ActionController::RoutingError (No route matches [GET] "/students/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (16.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (405.0ms)
+
+
+Started GET "/studenthomepage" for 127.0.0.1 at 2014-05-25 19:03:30 +1000
+Processing by StudenthomepageController#index as HTML
+  [1m[35mStudent Load (1.0ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1
+  Rendered studenthomepage/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:03:30 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:03:30 +1000
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 19:03:31 +1000
+
+ActionController::RoutingError (No route matches [GET] "/students/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (16.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (360.0ms)
+
+
+Started GET "/studenthomepage" for 127.0.0.1 at 2014-05-25 19:05:01 +1000
+Processing by StudenthomepageController#index as HTML
+  [1m[36mStudent Load (1.0ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1[0m
+  Rendered studenthomepage/index.html.erb within layouts/application (85.0ms)
+Completed 200 OK in 145ms (Views: 124.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:05:02 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:05:02 +1000
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 19:05:05 +1000
+
+ActionController::RoutingError (uninitialized constant SessionsController):
+  activesupport (4.0.4) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.4) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.4) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.4) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.4) lib/active_support/inflector/methods.rb:224:in `constantize'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/mapper.rb:44:in `call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__1017546238__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (61.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (707.0ms)
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 19:05:38 +1000
+
+ActionController::RoutingError (No route matches [GET] "/students/sign_out"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (18.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (58.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (423.0ms)
+
+
+Started GET "/students/sign_out" for 127.0.0.1 at 2014-05-25 19:05:51 +1000
+
+ActionController::RoutingError (uninitialized constant SessionsController):
+  activesupport (4.0.4) lib/active_support/inflector/methods.rb:226:in `const_get'
+  activesupport (4.0.4) lib/active_support/inflector/methods.rb:226:in `block in constantize'
+  activesupport (4.0.4) lib/active_support/inflector/methods.rb:224:in `each'
+  activesupport (4.0.4) lib/active_support/inflector/methods.rb:224:in `inject'
+  activesupport (4.0.4) lib/active_support/inflector/methods.rb:224:in `constantize'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:76:in `controller_reference'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:66:in `controller'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:44:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/mapper.rb:44:in `call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__1017546238__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (15.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (615.0ms)
+
+
 Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 18:46:20 +1000
   [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
 Processing by StartuppageController#index as HTML
@@ -11507,3 +12956,1148 @@ Started GET "/assets/profile.png" for 127.0.0.1 at 2014-05-25 19:04:41 +1000
 
 
 Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:04:41 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 19:12:56 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StartuppageController#index as HTML
+  [1m[35mStudent Load (1.0ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/studenthomepage
+Completed 302 Found in 164ms (ActiveRecord: 4.0ms)
+
+
+Started GET "/studenthomepage" for 127.0.0.1 at 2014-05-25 19:12:57 +1000
+Processing by StudenthomepageController#index as HTML
+  [1m[36mStudent Load (2.0ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1[0m
+  Rendered studenthomepage/index.html.erb within layouts/application (23.0ms)
+Completed 200 OK in 616ms (Views: 608.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 19:12:58 +1000
+Processing by StartuppageController#index as HTML
+  [1m[35mStudent Load (1.0ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/studenthomepage
+Completed 302 Found in 14ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/studenthomepage" for 127.0.0.1 at 2014-05-25 19:12:58 +1000
+Processing by StudenthomepageController#index as HTML
+  [1m[36mStudent Load (1.0ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1[0m
+  Rendered studenthomepage/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 64ms (Views: 62.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:12:58 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:12:58 +1000
+
+
+Started GET "/home_page/student_view" for 127.0.0.1 at 2014-05-25 19:13:14 +1000
+Processing by HomePageController#student_view as HTML
+  Rendered home_page/student_view.html.erb within layouts/application (21.0ms)
+Completed 200 OK in 109ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:13:15 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:13:15 +1000
+
+
+Started GET "/assets/profile.png" for 127.0.0.1 at 2014-05-25 19:13:15 +1000
+
+
+Started GET "/home_page/student_edit" for 127.0.0.1 at 2014-05-25 19:13:50 +1000
+Processing by HomePageController#student_edit as HTML
+  Rendered home_page/student_edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:13:50 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:13:50 +1000
+
+
+Started GET "/home_page/society_edit" for 127.0.0.1 at 2014-05-25 19:13:59 +1000
+Processing by HomePageController#society_edit as HTML
+  Rendered home_page/society_edit.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:13:59 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:13:59 +1000
+
+
+Started GET "/home_page/society_view" for 127.0.0.1 at 2014-05-25 19:14:05 +1000
+Processing by HomePageController#society_view as HTML
+  Rendered home_page/society_view.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 54ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/profile.png" for 127.0.0.1 at 2014-05-25 19:14:05 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:14:05 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:14:05 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 19:17:01 +1000
+Processing by StartuppageController#index as HTML
+  [1m[35mStudent Load (1.0ms)[0m  SELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1
+Redirected to http://localhost:3000/studenthomepage
+Completed 302 Found in 14ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/studenthomepage" for 127.0.0.1 at 2014-05-25 19:17:01 +1000
+Processing by StudenthomepageController#index as HTML
+  [1m[36mStudent Load (1.0ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1[0m
+  Rendered studenthomepage/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:17:01 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:17:01 +1000
+
+
+Started GET "/societies" for 127.0.0.1 at 2014-05-25 19:17:04 +1000
+Processing by SocietiesController#index as HTML
+  [1m[35mSociety Load (1.0ms)[0m  SELECT "societies".* FROM "societies"
+SQLite3::SQLException: no such table: societies: SELECT "societies".* FROM "societies"
+  Rendered societies/_show_all_societies.html.erb (35.0ms)
+  Rendered societies/index.html.erb within layouts/application (72.0ms)
+Completed 500 Internal Server Error in 106ms
+
+ActionView::Template::Error (SQLite3::SQLException: no such table: societies: SELECT "societies".* FROM "societies"):
+    24:     </thead>
+    25: 
+    26:     <tbody>
+    27:     <% Society.all.each do |society| %>
+    28:     <tr>
+    29:         <td align="center"><%= society.society_name %></td>
+    30:         <!--<td><%= society.registration_number %></td>-->
+  app/views/societies/_show_all_societies.html.erb:27:in `_app_views_societies__show_all_societies_html_erb__1043513292_30813180'
+  app/views/societies/index.html.erb:2:in `_app_views_societies_index_html_erb__876688488_29990484'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (49.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (151.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSocieties (20140521183051)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (3.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140521183051"]]
+  [1m[35m (6.0ms)[0m  commit transaction
+Migrating to CreateEvents (20140522070718)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (19.0ms)[0m  CREATE TABLE "events" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "start_time" time, "finish_time" time, "venue" varchar(255), "event_type" varchar(255), "event_url" varchar(255), "image_urls" varchar(255), "max_num_tickets" integer, "ticket_price" varchar(255), "ticket_start_date_time" datetime, "ticket_end_date_time" datetime, "ticket_purchase_pickup_information" varchar(255), "societies_shared_with" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140522070718"]]
+  [1m[35m (7.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/societies" for 127.0.0.1 at 2014-05-25 19:19:08 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SocietiesController#index as HTML
+  [1m[35mSociety Load (1.0ms)[0m  SELECT "societies".* FROM "societies"
+SQLite3::SQLException: no such table: societies: SELECT "societies".* FROM "societies"
+  Rendered societies/_show_all_societies.html.erb (30.0ms)
+  Rendered societies/index.html.erb within layouts/application (65.0ms)
+Completed 500 Internal Server Error in 243ms
+
+ActionView::Template::Error (SQLite3::SQLException: no such table: societies: SELECT "societies".* FROM "societies"):
+    24:     </thead>
+    25: 
+    26:     <tbody>
+    27:     <% Society.all.each do |society| %>
+    28:     <tr>
+    29:         <td align="center"><%= society.society_name %></td>
+    30:         <!--<td><%= society.registration_number %></td>-->
+  app/views/societies/_show_all_societies.html.erb:27:in `_app_views_societies__show_all_societies_html_erb___941528537_37724232'
+  app/views/societies/index.html.erb:2:in `_app_views_societies_index_html_erb__283274837_37093440'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (106.0ms)
+
+
+Started GET "/societies" for 127.0.0.1 at 2014-05-25 19:19:15 +1000
+Processing by SocietiesController#index as HTML
+  [1m[36mSociety Load (1.0ms)[0m  [1mSELECT "societies".* FROM "societies"[0m
+SQLite3::SQLException: no such table: societies: SELECT "societies".* FROM "societies"
+  Rendered societies/_show_all_societies.html.erb (18.0ms)
+  Rendered societies/index.html.erb within layouts/application (26.0ms)
+Completed 500 Internal Server Error in 51ms
+
+ActionView::Template::Error (SQLite3::SQLException: no such table: societies: SELECT "societies".* FROM "societies"):
+    24:     </thead>
+    25: 
+    26:     <tbody>
+    27:     <% Society.all.each do |society| %>
+    28:     <tr>
+    29:         <td align="center"><%= society.society_name %></td>
+    30:         <!--<td><%= society.registration_number %></td>-->
+  app/views/societies/_show_all_societies.html.erb:27:in `_app_views_societies__show_all_societies_html_erb___941528537_37724232'
+  app/views/societies/index.html.erb:2:in `_app_views_societies_index_html_erb__283274837_37093440'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (102.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to DeviseCreateStudents (20140525063059)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (3.0ms)[0m  DROP INDEX "index_students_on_reset_password_token"
+  [1m[36m (5.0ms)[0m  [1mDROP INDEX "index_students_on_email"[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "students"
+  [1m[36mSQL (0.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140525063059'[0m
+  [1m[35m (9.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/societies" for 127.0.0.1 at 2014-05-25 19:26:46 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.4) lib/active_record/migration.rb:383:in `check_pending!'
+  activerecord (4.0.4) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__233093158__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (150.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSocieties (20140522070719)
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140522070719"]]
+  [1m[35m (7.0ms)[0m  commit transaction
+Migrating to DeviseCreateStudents (20140525063059)
+  [1m[36m (1.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (5.0ms)[0m  CREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "firstname" varchar(255), "lastname" varchar(255), "school" varchar(255), "studentid" varchar(255), "clubs" varchar(255), "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (5.0ms)[0m  [1mCREATE UNIQUE INDEX "index_students_on_email" ON "students" ("email")[0m
+  [1m[35m (1.0ms)[0m  CREATE UNIQUE INDEX "index_students_on_reset_password_token" ON "students" ("reset_password_token")
+  [1m[36mSQL (0.0ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20140525063059"]]
+  [1m[35m (9.0ms)[0m  commit transaction
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/societies" for 127.0.0.1 at 2014-05-25 19:29:18 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SocietiesController#index as HTML
+  [1m[35mSociety Load (2.0ms)[0m  SELECT "societies".* FROM "societies"
+SQLite3::SQLException: no such table: societies: SELECT "societies".* FROM "societies"
+  Rendered societies/_show_all_societies.html.erb (26.0ms)
+  Rendered societies/index.html.erb within layouts/application (58.0ms)
+Completed 500 Internal Server Error in 206ms
+
+ActionView::Template::Error (SQLite3::SQLException: no such table: societies: SELECT "societies".* FROM "societies"):
+    24:     </thead>
+    25: 
+    26:     <tbody>
+    27:     <% Society.all.each do |society| %>
+    28:     <tr>
+    29:         <td align="center"><%= society.society_name %></td>
+    30:         <!--<td><%= society.registration_number %></td>-->
+  app/views/societies/_show_all_societies.html.erb:27:in `_app_views_societies__show_all_societies_html_erb___21456297_38606916'
+  app/views/societies/index.html.erb:2:in `_app_views_societies_index_html_erb__207290702_38021652'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (100.0ms)
+
+
+Started GET "/evnets" for 127.0.0.1 at 2014-05-25 19:29:28 +1000
+
+ActionController::RoutingError (No route matches [GET] "/evnets"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (22.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (36.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (447.0ms)
+
+
+Started GET "/evnets/new" for 127.0.0.1 at 2014-05-25 19:29:37 +1000
+
+ActionController::RoutingError (No route matches [GET] "/evnets/new"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (20.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (413.0ms)
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 19:29:53 +1000
+Processing by StartuppageController#index as HTML
+  [1m[36mStudent Load (2.0ms)[0m  [1mSELECT "students".* FROM "students" WHERE "students"."id" = 1 ORDER BY "students"."id" ASC LIMIT 1[0m
+  Rendered startuppage/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 311ms (Views: 243.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:29:54 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:29:54 +1000
+
+
+Started GET "/students/sign_up" for 127.0.0.1 at 2014-05-25 19:30:01 +1000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (128.0ms)
+Completed 200 OK in 188ms (Views: 174.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:30:01 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:30:01 +1000
+
+
+Started GET "/societies" for 127.0.0.1 at 2014-05-25 19:30:16 +1000
+Processing by SocietiesController#index as HTML
+  [1m[35mSociety Load (2.0ms)[0m  SELECT "societies".* FROM "societies"
+SQLite3::SQLException: no such table: societies: SELECT "societies".* FROM "societies"
+  Rendered societies/_show_all_societies.html.erb (16.0ms)
+  Rendered societies/index.html.erb within layouts/application (25.0ms)
+Completed 500 Internal Server Error in 52ms
+
+ActionView::Template::Error (SQLite3::SQLException: no such table: societies: SELECT "societies".* FROM "societies"):
+    24:     </thead>
+    25: 
+    26:     <tbody>
+    27:     <% Society.all.each do |society| %>
+    28:     <tr>
+    29:         <td align="center"><%= society.society_name %></td>
+    30:         <!--<td><%= society.registration_number %></td>-->
+  app/views/societies/_show_all_societies.html.erb:27:in `_app_views_societies__show_all_societies_html_erb___21456297_38606916'
+  app/views/societies/index.html.erb:2:in `_app_views_societies_index_html_erb__207290702_38021652'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (101.0ms)
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 19:33:24 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 66ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:33:25 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:33:25 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 19:35:53 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 49ms (Views: 45.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:35:53 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:35:53 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 19:36:28 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 59ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:36:28 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:36:28 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 19:40:36 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 402ms (Views: 300.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:40:37 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:40:37 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 19:42:22 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:42:22 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:42:22 +1000
+
+
+Started GET "/startuppage?commit=Register" for 127.0.0.1 at 2014-05-25 19:42:25 +1000
+Processing by StartuppageController#index as HTML
+  Parameters: {"commit"=>"Register"}
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:42:25 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:42:25 +1000
+
+
+Started GET "/startuppage?commit=Register" for 127.0.0.1 at 2014-05-25 19:42:29 +1000
+Processing by StartuppageController#index as HTML
+  Parameters: {"commit"=>"Register"}
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:42:29 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:42:29 +1000
+
+
+Started GET "/students/sign_up" for 127.0.0.1 at 2014-05-25 19:42:32 +1000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (198.0ms)
+Completed 200 OK in 260ms (Views: 243.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:42:33 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:42:33 +1000
+
+
+Started GET "/students/sign_up" for 127.0.0.1 at 2014-05-25 19:43:44 +1000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 63ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:43:44 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:43:44 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 19:43:54 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:43:55 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:43:55 +1000
+
+
+Started GET "/startuppage?commit=Register" for 127.0.0.1 at 2014-05-25 19:43:59 +1000
+Processing by StartuppageController#index as HTML
+  Parameters: {"commit"=>"Register"}
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 37ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:43:59 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:43:59 +1000
+
+
+Started GET "/startuppage?commit=Register" for 127.0.0.1 at 2014-05-25 19:44:19 +1000
+Processing by StartuppageController#index as HTML
+  Parameters: {"commit"=>"Register"}
+  Rendered startuppage/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 70ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:44:19 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:44:20 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 19:44:22 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:44:22 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:44:22 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 19:44:27 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:44:27 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:44:27 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 19:44:31 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:44:31 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:44:31 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 19:44:43 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:44:43 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:44:43 +1000
+
+
+Started GET "/startuppage?nil=Register" for 127.0.0.1 at 2014-05-25 19:44:46 +1000
+Processing by StartuppageController#index as HTML
+  Parameters: {"nil"=>"Register"}
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:44:46 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:44:46 +1000
+
+
+Started GET "/startuppage?nil=Register" for 127.0.0.1 at 2014-05-25 19:45:08 +1000
+Processing by StartuppageController#index as HTML
+  Parameters: {"nil"=>"Register"}
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 42ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:45:09 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:45:09 +1000
+
+
+Started GET "/startuppage?nil=Register" for 127.0.0.1 at 2014-05-25 19:45:14 +1000
+Processing by StartuppageController#index as HTML
+  Parameters: {"nil"=>"Register"}
+  Rendered startuppage/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:45:14 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:45:14 +1000
+
+
+Started GET "/startuppage?nil=Register" for 127.0.0.1 at 2014-05-25 19:45:34 +1000
+Processing by StartuppageController#index as HTML
+  Parameters: {"nil"=>"Register"}
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 67ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:45:34 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:45:34 +1000
+
+
+Started GET "/startuppage?nil=Register" for 127.0.0.1 at 2014-05-25 19:45:47 +1000
+Processing by StartuppageController#index as HTML
+  Parameters: {"nil"=>"Register"}
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 65ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:45:47 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:45:47 +1000
+
+
+Started GET "/startuppage?nil=Register" for 127.0.0.1 at 2014-05-25 19:49:23 +1000
+Processing by StartuppageController#index as HTML
+  Parameters: {"nil"=>"Register"}
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 75ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:49:23 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:49:23 +1000
+
+
+Started GET "/startuppage?nil=Register" for 127.0.0.1 at 2014-05-25 19:49:59 +1000
+Processing by StartuppageController#index as HTML
+  Parameters: {"nil"=>"Register"}
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:49:59 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:49:59 +1000
+
+
+Started GET "/students/sign_up" for 127.0.0.1 at 2014-05-25 19:50:01 +1000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 62ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:50:01 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:50:01 +1000
+
+
+Started GET "/students/sign_up" for 127.0.0.1 at 2014-05-25 19:50:22 +1000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 60ms (Views: 56.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:50:22 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:50:22 +1000
+
+
+Started GET "/startuppage?nil=Register" for 127.0.0.1 at 2014-05-25 19:50:52 +1000
+Processing by StartuppageController#index as HTML
+  Parameters: {"nil"=>"Register"}
+  Rendered startuppage/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:50:53 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:50:53 +1000
+
+
+Started GET "/students/sign_up" for 127.0.0.1 at 2014-05-25 19:50:55 +1000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 61ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:50:55 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:50:55 +1000
+
+
+Started GET "/startuppage?nil=Register" for 127.0.0.1 at 2014-05-25 19:51:48 +1000
+Processing by StartuppageController#index as HTML
+  Parameters: {"nil"=>"Register"}
+  Rendered startuppage/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 64ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:51:48 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:51:49 +1000
+
+
+Started GET "/students/sign_up" for 127.0.0.1 at 2014-05-25 19:51:51 +1000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 62ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:51:51 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:51:51 +1000
+
+
+Started GET "/startuppage?nil=Register" for 127.0.0.1 at 2014-05-25 19:52:38 +1000
+Processing by StartuppageController#index as HTML
+  Parameters: {"nil"=>"Register"}
+  Rendered startuppage/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 70ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:52:38 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:52:39 +1000
+
+
+Started GET "/students/sign_in" for 127.0.0.1 at 2014-05-25 19:52:42 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (75.0ms)
+Completed 200 OK in 171ms (Views: 165.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:52:42 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:52:42 +1000
+
+
+Started GET "/students/sign_up" for 127.0.0.1 at 2014-05-25 19:52:45 +1000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 60ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:52:45 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:52:45 +1000
+
+
+Started GET "/startuppage?nil=Register" for 127.0.0.1 at 2014-05-25 19:52:55 +1000
+Processing by StartuppageController#index as HTML
+  Parameters: {"nil"=>"Register"}
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 42ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:52:55 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:52:55 +1000
+
+
+Started GET "/startuppage?nil=Register" for 127.0.0.1 at 2014-05-25 19:53:09 +1000
+Processing by StartuppageController#index as HTML
+  Parameters: {"nil"=>"Register"}
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:53:09 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:53:09 +1000
+
+
+Started GET "/startuppage?nil=Register" for 127.0.0.1 at 2014-05-25 19:53:17 +1000
+Processing by StartuppageController#index as HTML
+  Parameters: {"nil"=>"Register"}
+  Rendered startuppage/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 78ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:53:17 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:53:17 +1000
+
+
+Started GET "/startuppage?nil=Register" for 127.0.0.1 at 2014-05-25 19:53:36 +1000
+Processing by StartuppageController#index as HTML
+  Parameters: {"nil"=>"Register"}
+  Rendered startuppage/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 82ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:53:37 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:53:37 +1000
+
+
+Started GET "/startuppage?nil=Register" for 127.0.0.1 at 2014-05-25 19:53:54 +1000
+Processing by StartuppageController#index as HTML
+  Parameters: {"nil"=>"Register"}
+  Rendered startuppage/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 64ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:53:55 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:53:55 +1000
+
+
+Started GET "/startuppage?nil=Register" for 127.0.0.1 at 2014-05-25 19:54:15 +1000
+Processing by StartuppageController#index as HTML
+  Parameters: {"nil"=>"Register"}
+  Rendered startuppage/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 138ms (Views: 118.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:54:16 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:54:16 +1000
+
+
+Started GET "/startuppage?nil=Register" for 127.0.0.1 at 2014-05-25 19:54:44 +1000
+Processing by StartuppageController#index as HTML
+  Parameters: {"nil"=>"Register"}
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:54:44 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:54:44 +1000
+
+
+Started GET "/students/sign_in" for 127.0.0.1 at 2014-05-25 19:54:51 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 54ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:54:51 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:54:51 +1000
+
+
+Started GET "/students/sign_in" for 127.0.0.1 at 2014-05-25 19:56:26 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 55ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:56:26 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:56:26 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 19:56:27 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 42ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:56:27 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:56:27 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 19:58:05 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 67ms (Views: 63.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:58:05 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:58:06 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 19:58:51 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 172ms (Views: 162.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:58:52 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:58:52 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 19:58:53 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:58:53 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:58:53 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 19:59:27 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 79ms (Views: 71.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:59:28 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:59:28 +1000
+
+
+Started GET "/students/sign_in" for 127.0.0.1 at 2014-05-25 19:59:54 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 59ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:59:55 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:59:55 +1000
+
+
+Started GET "/students/sign_up" for 127.0.0.1 at 2014-05-25 19:59:56 +1000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 64ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:59:56 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 19:59:57 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 20:00:00 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:00:00 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:00:00 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 20:00:02 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:00:02 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:00:02 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 20:00:38 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:00:39 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:00:39 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 20:01:58 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 38ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:01:58 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:01:58 +1000
+
+
+Started GET "/events" for 127.0.0.1 at 2014-05-25 20:02:02 +1000
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/_show_all_events.html.erb (10.0ms)
+  Rendered events/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 115ms (Views: 78.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:02:02 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:02:02 +1000
+
+
+Started GET "/societies" for 127.0.0.1 at 2014-05-25 20:02:11 +1000
+Processing by SocietiesController#index as HTML
+  [1m[36mSociety Load (2.0ms)[0m  [1mSELECT "societies".* FROM "societies"[0m
+SQLite3::SQLException: no such table: societies: SELECT "societies".* FROM "societies"
+  Rendered societies/_show_all_societies.html.erb (36.0ms)
+  Rendered societies/index.html.erb within layouts/application (48.0ms)
+Completed 500 Internal Server Error in 93ms
+
+ActionView::Template::Error (SQLite3::SQLException: no such table: societies: SELECT "societies".* FROM "societies"):
+    24:     </thead>
+    25: 
+    26:     <tbody>
+    27:     <% Society.all.each do |society| %>
+    28:     <tr>
+    29:         <td align="center"><%= society.society_name %></td>
+    30:         <!--<td><%= society.registration_number %></td>-->
+  app/views/societies/_show_all_societies.html.erb:27:in `_app_views_societies__show_all_societies_html_erb__1021691474_24033396'
+  app/views/societies/index.html.erb:2:in `_app_views_societies_index_html_erb__952907775_23708532'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (108.0ms)
+
+
+Started GET "/societies" for 127.0.0.1 at 2014-05-25 20:02:25 +1000
+Processing by SocietiesController#index as HTML
+  [1m[35mSociety Load (1.0ms)[0m  SELECT "societies".* FROM "societies"
+SQLite3::SQLException: no such table: societies: SELECT "societies".* FROM "societies"
+  Rendered societies/_show_all_societies.html.erb (16.0ms)
+  Rendered societies/index.html.erb within layouts/application (23.0ms)
+Completed 500 Internal Server Error in 46ms
+
+ActionView::Template::Error (SQLite3::SQLException: no such table: societies: SELECT "societies".* FROM "societies"):
+    24:     </thead>
+    25: 
+    26:     <tbody>
+    27:     <% Society.all.each do |society| %>
+    28:     <tr>
+    29:         <td align="center"><%= society.society_name %></td>
+    30:         <!--<td><%= society.registration_number %></td>-->
+  app/views/societies/_show_all_societies.html.erb:27:in `_app_views_societies__show_all_societies_html_erb__1021691474_24033396'
+  app/views/societies/index.html.erb:2:in `_app_views_societies_index_html_erb__952907775_23708532'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (113.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (244.0ms)
+
+
+Started GET "/societies" for 127.0.0.1 at 2014-05-25 20:02:26 +1000
+Processing by SocietiesController#index as HTML
+  [1m[36mSociety Load (1.0ms)[0m  [1mSELECT "societies".* FROM "societies"[0m
+SQLite3::SQLException: no such table: societies: SELECT "societies".* FROM "societies"
+  Rendered societies/_show_all_societies.html.erb (17.0ms)
+  Rendered societies/index.html.erb within layouts/application (25.0ms)
+Completed 500 Internal Server Error in 47ms
+
+ActionView::Template::Error (SQLite3::SQLException: no such table: societies: SELECT "societies".* FROM "societies"):
+    24:     </thead>
+    25: 
+    26:     <tbody>
+    27:     <% Society.all.each do |society| %>
+    28:     <tr>
+    29:         <td align="center"><%= society.society_name %></td>
+    30:         <!--<td><%= society.registration_number %></td>-->
+  app/views/societies/_show_all_societies.html.erb:27:in `_app_views_societies__show_all_societies_html_erb__1021691474_24033396'
+  app/views/societies/index.html.erb:2:in `_app_views_societies_index_html_erb__952907775_23708532'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (100.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"

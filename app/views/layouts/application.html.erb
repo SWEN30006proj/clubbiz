@@ -25,7 +25,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="javascript:void(0)"><%= image_tag("Head_logo2.png", class:"header_logo", :alt => "Head Logo") %></a>
+    <a class="navbar-brand" href="http://localhost:3000/startuppage"> <%= image_tag("Head_logo2.png", class:"header_logo", :alt => "Head Logo") %></a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -50,6 +50,17 @@
       </div>
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
+    <ul class="nav navbar-nav">
+
+    <% if signed_in? %>
+
+        Signed in as <%=current_student.firstname%>. If this is not you?
+        <%=link_to "Sign out", destroy_student_session_path,:method => :delete%>
+    <%else%>
+
+    <%end%>
+    </ul>
+
     <ul class="nav navbar-nav navbar-right">
       <li><a href="javascript:void(0)">Welcome Guest</a></li>
       <li class="dropdown">
@@ -61,14 +72,16 @@
             <input id="user_password" style="margin-bottom: 15px;" type="password" name="user[password]" size="30" placeholder="Password"/>
             <input id="user_remember_me" style="float: left; margin-right: 10px;" type="checkbox" name="user[remember_me]" value="1" />
             <label class="string optional" for="user_remember_me"> Remember me</label>
+    </form>
+          <a class="btn btn-primary" href="http://localhost:3000/students/sign_in" style="clear: left; width: 100%; height: 32px; font-size: 13px;" >Sign In</a>
 
-            <input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Sign In" />
-          </form>
           <br>
-          <form action="javascript:void(0)" method="post" accept-charset="UTF-8">
-            <input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Register" />
-          </form>
-        </div>
+          <br>
+
+          <a class="btn btn-primary" href="http://localhost:3000/students/sign_up" style="clear: left; width: 100%; height: 32px; font-size: 13px;" >Register</a>
+          <br>
+
+         </div>
       </li>
     </ul>
   </div><!-- /.navbar-collapse -->
@@ -78,3 +91,5 @@
 
 </body>
 </html>
+
+
