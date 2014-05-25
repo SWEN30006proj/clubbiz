@@ -37,4 +37,10 @@ class SearchController < ApplicationController
   end
 
 
+
+  def list
+    @clubs_data_all = Society.all
+  end
+
+
 end

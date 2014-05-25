@@ -1,0 +1,27 @@
+<h1> This is the list of societies </h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Society Name</th>
+    <th>Rigistration Number</th>
+    <th>Website</th>
+    <th>President</th>
+    <th colspan="23"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @clubs_data_all.each do |clubs_datum| %>
+      <tr>
+        <td><%= clubs_datum.society_name %></td>
+        <td><%= clubs_datum.registration_number %></td>
+        <td><%= clubs_datum.club_website %></td>
+        <td><%= clubs_datum.president_name %></td>
+        <br>
+      </tr><br>
+  <% end %>
+  </tbody>
+  </table>
+
+
