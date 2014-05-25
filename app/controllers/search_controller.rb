@@ -47,4 +47,8 @@ class SearchController < ApplicationController
   end
 
 
+  def  eventlist
+    @events_data_all = Event.all
+  end
+
 end

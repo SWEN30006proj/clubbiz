@@ -30,7 +30,7 @@ Search by events
 <% end %>
 <% @clubs_data.each do |clubs_datum| %>
     <tr>
-      <td><a href= <%=home_page_society_view_path%>><%= clubs_datum.society_name %></a></td><br>
+      <td><%= clubs_datum.society_name %></td><br>
       <td><%= clubs_datum.registration_number %></td><br>
     </tr><br>
 <% end %>

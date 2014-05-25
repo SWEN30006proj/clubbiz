@@ -8,11 +8,7 @@ class DeviseCreateStudents < ActiveRecord::Migration
       t.string :school
       t.string :studentid
       t.string :clubs
-
-
-
-
-      t.string :email,              null: false, default: ""
+    t.string :email,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
       ## Recoverable
