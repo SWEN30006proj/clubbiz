@@ -16,38 +16,30 @@ Search by events
 
 <% @clubs_data1.each do |clubs_datum| %>
     <tr>
-      <td><%= clubs_datum.society_name %></td>
-      <td><%= clubs_datum.registration_number %></td>
-      <td><%= clubs_datum.club_website %></td>
-      <td><%= clubs_datum.president_name %></td>
+      <td><%= clubs_datum.society_name %></td><br>
+      <td><%= clubs_datum.registration_number %></td><br>
     </tr><br>
 <% end %>
 
 
-<% @events_data1.each do |events_datum| %>
+<% @events_data1.each do |event_datum| %>
     <tr>
-      <td><%= events_datum.title%></td><br>
-      <td><%= events_datum.start_time %></td><br>
-      <td><%= events_datum.ticket_price %></td><br>
-      <td><%= events_datum.societies_shared_with %></td><br>
+      <td><%= event_datum.title %></td><br>
+      <td><%= event_datum.start_time %></td><br>
     </tr><br>
 <% end %>
 <% @clubs_data.each do |clubs_datum| %>
     <tr>
-      <td><%= clubs_datum.society_name %></td>
-      <td><%= clubs_datum.registration_number %></td>
-      <td><%= clubs_datum.club_website %></td>
-      <td><%= clubs_datum.president_name %></td>
+      <td><%= clubs_datum.society_name %></td><br>
+      <td><%= clubs_datum.registration_number %></td><br>
     </tr><br>
 <% end %>
 
 
-<% @events_data.each do |events_datum| %>
+<% @events_data.each do |event_datum| %>
     <tr>
-      <td><%= events_datum.title%></td><br>
-      <td><%= events_datum.start_time %></td><br>
-      <td><%= events_datum.ticket_price %></td><br>
-      <td><%= events_datum.societies_shared_with %></td><br>
+      <td><%= event_datum.title %></td><br>
+      <td><%= event_datum.start_time %></td><br>
     </tr><br>
 <% end %>
 

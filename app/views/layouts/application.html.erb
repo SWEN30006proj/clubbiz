@@ -9,6 +9,7 @@
   <style>
 
   </style>
+  <%= javascript_include_tag :defaults %>
   <!-- <%= stylesheet_link_tag "application" %> -->
   <link href="/assets/application.css?body=1" media="screen" rel="stylesheet" />
   <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
@@ -45,44 +46,75 @@
       </li>
     </ul>
 
-
-    <%= form_tag search_index_path, method: :get do %>
-        <%= text_field_tag :search, params[:search] %>
-        <%= submit_tag "Search", :name => nil %>
-    <% end %>
-
-
-    <% if signed_in? %>
-        Signed in as <%=current_student.firstname%>. If this is not you?
-        <%=link_to "Sign out", destroy_student_session_path,:method => :delete%>
-    <%else%>
-
-    <%end%>
-
+    <form class="navbar-form navbar-left" role="search" action="/search/index">
+      <div class="form-group">
+        <input name="utf8" type="hidden" value="&#x2713;" />
+        <input type="text" class="form-control" placeholder="Search Event/Society" id=search" name="search">
+      </div>
+      <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+    
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="javascript:void(0)">Welcome Guest</a></li>
+      <% if signed_in?
+           @name = current_student.firstname + " " + current_student.lastname%>
+           <li><a href=<%=home_page_student_view_path%> >Welcome <%=@name%></a></li>
+        <%else
+           @name = "Guest"%>
+           <li><a href="javascript:void(0)">Welcome <%=@name%></a></li>
+        <%end%>
+
+
       <li class="dropdown">
-        <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In or Register <strong class="caret"></strong></a>
-        <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-          <!-- Login form here -->
+        <% unless signed_in?%>
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In/Register <strong class="caret"></strong></a>
+          <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+            <!-- Login form here -->
+            <!-- <form action="/students/sign_in" method="post" accept-charset="UTF-8">
+               <input id="user_username" style="margin-bottom: 15px;" type="text" name="user[username]" size="30" placeholder="Username"/>
+               <input id="user_password" style="margin-bottom: 15px;" type="password" name="user[password]" size="30" placeholder="Password"/>
+               <input id="user_remember_me" style="float: left; margin-right: 10px;" type="checkbox" name="user[remember_me]" value="1" />
+               <label class="string optional" for="user_remember_me"> Remember me</label>
+            </form>-->
 
-          <a class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" href="http://localhost:3000/students/sign_in"  >Sign In </a>
-          <br>
+            <a href="/students/sign_in" ><input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="" name="commit" value="Sign In" /> </a>
+            <br/>
+            <br/>
+            <!--<form action="javascript:void(0)" method="post" accept-charset="UTF-8">
+              <input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Register" />
+            </form>-->
+            <a class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" href="http://localhost:3000/students/sign_up"  >Register Student </a>
+            <br>
+            <br>
+            <a class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" href="http://localhost:3000/societies/new"  >Register Society </a>
+            <br>
+            <br/>
 
-          <br>
-         <a class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" href="http://localhost:3000/students/sign_up"  >Register Student </a>
-          <br>
-          <br>
-          <a class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" href="http://localhost:3000/societies/new"  >Register Society </a>
-          <br>
-
-        </div>
+          </div>
+          <%else%>
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign Out <strong class="caret"></strong></a>
+          <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+            <a href=<%=destroy_student_session_path%> ><input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Sign out" /> </a>
+            <br/>
+            <br/>
+          </div>
+          <%end%>
       </li>
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>
 
+<% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>
+
 <%= yield %>
 
+
+<br/>
+<br/>
+<%= link_to 'Back', :back %>
 </body>
 </html>
