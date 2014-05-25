@@ -1,5 +1,4 @@
 class CreateSocieties < ActiveRecord::Migration
-  def
 
   def change
 

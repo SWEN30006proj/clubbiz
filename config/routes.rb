@@ -18,6 +18,8 @@ Clubbiz::Application.routes.draw do
   resources :startuppage
  resources :studenthomepage
 
+  get 'search/index'
+
 
   resources :maintopics do
     resources :subtopics

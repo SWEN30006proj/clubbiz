@@ -11507,3 +11507,1940 @@ Started GET "/assets/profile.png" for 127.0.0.1 at 2014-05-25 19:04:41 +1000
 
 
 Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 19:04:41 +1000
+
+
+Started GET "/societies" for 127.0.0.1 at 2014-05-25 20:09:42 +1000
+Processing by SocietiesController#index as HTML
+  [1m[35mSociety Load (3.0ms)[0m  SELECT "societies".* FROM "societies"
+SQLite3::SQLException: no such table: societies: SELECT "societies".* FROM "societies"
+  Rendered societies/_show_all_societies.html.erb (20.0ms)
+  Rendered societies/index.html.erb within layouts/application (27.0ms)
+Completed 500 Internal Server Error in 75ms
+
+ActionView::Template::Error (SQLite3::SQLException: no such table: societies: SELECT "societies".* FROM "societies"):
+    24:     </thead>
+    25: 
+    26:     <tbody>
+    27:     <% Society.all.each do |society| %>
+    28:     <tr>
+    29:         <td align="center"><%= society.society_name %></td>
+    30:         <!--<td><%= society.registration_number %></td>-->
+  app/views/societies/_show_all_societies.html.erb:27:in `_app_views_societies__show_all_societies_html_erb__1021691474_24033396'
+  app/views/societies/index.html.erb:2:in `_app_views_societies_index_html_erb__952907775_23708532'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (105.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to DeviseCreateStudents (20140525063059)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (3.0ms)[0m  DROP INDEX "index_students_on_reset_password_token"
+  [1m[36m (4.0ms)[0m  [1mDROP INDEX "index_students_on_email"[0m
+  [1m[35m (1.0ms)[0m  DROP TABLE "students"
+  [1m[36mSQL (1.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140525063059'[0m
+  [1m[35m (9.0ms)[0m  commit transaction
+Migrating to CreateSocieties (20140522070719)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (3.0ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20140522070719'
+  [1m[36m (8.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSocieties (20140522070719)
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36m (4.0ms)[0m  [1mCREATE TABLE "societies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "society_name" varchar(255), "registration_number" varchar(255), "club_website" varchar(255), "club_nickname" varchar(255), "password" varchar(255), "president_name" varchar(255), "president_phone_number" varchar(255), "president_email" varchar(255), "treasurer_name" varchar(255), "treasurer_phone_number" varchar(255), "treasurer_email" varchar(255), "club_biz_administrator_name" varchar(255), "club_biz_administrator_phone_number" varchar(255), "club_biz_administrator_email" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140522070719"]]
+  [1m[36m (7.0ms)[0m  [1mcommit transaction[0m
+Migrating to DeviseCreateStudents (20140525063059)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (3.0ms)[0m  [1mCREATE TABLE "students" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "firstname" varchar(255), "lastname" varchar(255), "school" varchar(255), "studentid" varchar(255), "clubs" varchar(255), "email" varchar(255) DEFAULT '' NOT NULL, "encrypted_password" varchar(255) DEFAULT '' NOT NULL, "reset_password_token" varchar(255), "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar(255), "last_sign_in_ip" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (3.0ms)[0m  CREATE UNIQUE INDEX "index_students_on_email" ON "students" ("email")
+  [1m[36m (0.0ms)[0m  [1mCREATE UNIQUE INDEX "index_students_on_reset_password_token" ON "students" ("reset_password_token")[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140525063059"]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (1.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/societies" for 127.0.0.1 at 2014-05-25 20:12:19 +1000
+Processing by SocietiesController#index as HTML
+  [1m[36mSociety Load (2.0ms)[0m  [1mSELECT "societies".* FROM "societies"[0m
+  Rendered societies/_show_all_societies.html.erb (8.0ms)
+  Rendered societies/index.html.erb within layouts/application (63.0ms)
+Completed 200 OK in 125ms (Views: 100.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:12:20 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:12:20 +1000
+
+
+Started GET "/societies/new" for 127.0.0.1 at 2014-05-25 20:16:35 +1000
+Processing by SocietiesController#new as HTML
+  Rendered societies/_form.html.erb (68.0ms)
+  Rendered societies/new.html.erb within layouts/application (92.0ms)
+Completed 200 OK in 145ms (Views: 134.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:16:36 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:16:36 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 20:16:42 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 52ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:16:42 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:16:42 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 20:19:37 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 39ms (Views: 36.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:19:37 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:19:37 +1000
+
+
+Started GET "/students/sign_up" for 127.0.0.1 at 2014-05-25 20:19:39 +1000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (57.0ms)
+Completed 200 OK in 119ms (Views: 107.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:19:40 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:19:40 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 20:20:01 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 61ms (Views: 58.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:20:01 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:20:01 +1000
+
+
+Started GET "/students/sign_up" for 127.0.0.1 at 2014-05-25 20:20:03 +1000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (22.0ms)
+Completed 200 OK in 115ms (Views: 67.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:20:04 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:20:04 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 20:20:15 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:20:15 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:20:15 +1000
+
+
+Started GET "/students/sign_up" for 127.0.0.1 at 2014-05-25 20:20:17 +1000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 63ms (Views: 59.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:20:17 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:20:17 +1000
+
+
+Started GET "/students/sign_up" for 127.0.0.1 at 2014-05-25 20:21:08 +1000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 86ms (Views: 81.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:21:09 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:21:09 +1000
+
+
+Started GET "/students/sign_in" for 127.0.0.1 at 2014-05-25 20:21:11 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 59ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:21:11 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:21:11 +1000
+
+
+Started GET "/students/sign_up" for 127.0.0.1 at 2014-05-25 20:21:14 +1000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 63ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:21:14 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:21:14 +1000
+
+
+Started GET "/students/sign_up" for 127.0.0.1 at 2014-05-25 20:22:03 +1000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 104ms (Views: 99.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:22:04 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:22:04 +1000
+
+
+Started GET "/societies/create" for 127.0.0.1 at 2014-05-25 20:22:06 +1000
+Processing by SocietiesController#show as HTML
+  Parameters: {"id"=>"create"}
+  [1m[35mSociety Load (1.0ms)[0m  SELECT "societies".* FROM "societies" WHERE "societies"."id" = ? LIMIT 1  [["id", "create"]]
+Completed 404 Not Found in 11ms
+
+ActiveRecord::RecordNotFound (Couldn't find Society with id=create):
+  app/controllers/societies_controller.rb:74:in `set_society'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (151.0ms)
+
+
+Started GET "/societies" for 127.0.0.1 at 2014-05-25 20:22:11 +1000
+Processing by SocietiesController#index as HTML
+  [1m[36mSociety Load (1.0ms)[0m  [1mSELECT "societies".* FROM "societies"[0m
+  Rendered societies/_show_all_societies.html.erb (7.0ms)
+  Rendered societies/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 61ms (Views: 57.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:22:11 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:22:11 +1000
+
+
+Started GET "/societies/new" for 127.0.0.1 at 2014-05-25 20:22:14 +1000
+Processing by SocietiesController#new as HTML
+  Rendered societies/_form.html.erb (20.0ms)
+  Rendered societies/new.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 74ms (Views: 72.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:22:15 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:22:15 +1000
+
+
+Started GET "/societies/create" for 127.0.0.1 at 2014-05-25 20:22:51 +1000
+Processing by SocietiesController#show as HTML
+  Parameters: {"id"=>"create"}
+  [1m[35mSociety Load (1.0ms)[0m  SELECT "societies".* FROM "societies" WHERE "societies"."id" = ? LIMIT 1  [["id", "create"]]
+Completed 404 Not Found in 9ms
+
+ActiveRecord::RecordNotFound (Couldn't find Society with id=create):
+  app/controllers/societies_controller.rb:74:in `set_society'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (178.0ms)
+
+
+Started GET "/students/sign_up" for 127.0.0.1 at 2014-05-25 20:22:54 +1000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/registrations/new.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 65ms (Views: 61.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:22:54 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:22:54 +1000
+
+
+Started GET "/societies/new" for 127.0.0.1 at 2014-05-25 20:22:56 +1000
+Processing by SocietiesController#new as HTML
+  Rendered societies/_form.html.erb (22.0ms)
+  Rendered societies/new.html.erb within layouts/application (29.0ms)
+Completed 200 OK in 73ms (Views: 68.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:22:57 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:22:57 +1000
+
+
+Started GET "/students/sign_in" for 127.0.0.1 at 2014-05-25 20:23:11 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:23:11 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:23:11 +1000
+
+
+Started GET "/students/sign_in" for 127.0.0.1 at 2014-05-25 20:23:30 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 81ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:23:30 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:23:30 +1000
+
+
+Started GET "/students/sign_in" for 127.0.0.1 at 2014-05-25 20:24:22 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 59ms (Views: 55.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:24:22 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:24:22 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 20:24:23 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 44ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:24:23 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:24:24 +1000
+
+
+Started GET "/search" for 127.0.0.1 at 2014-05-25 20:33:48 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActiveRecord::PendingMigrationError (Migrations are pending; run 'bin/rake db:migrate RAILS_ENV=development' to resolve this issue.):
+  activerecord (4.0.4) lib/active_record/migration.rb:383:in `check_pending!'
+  activerecord (4.0.4) lib/active_record/migration.rb:370:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__960490229__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (200.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateSearches (20140525103028)
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (4.0ms)[0m  [1mCREATE TABLE "searches" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20140525103028"]]
+  [1m[36m (7.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/search" for 127.0.0.1 at 2014-05-25 20:34:28 +1000
+  [1m[35mActiveRecord::SchemaMigration Load (0.0ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+ActionController::RoutingError (No route matches [GET] "/search"):
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (19.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (13.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (428.0ms)
+
+
+Started GET "/search/index" for 127.0.0.1 at 2014-05-25 20:34:33 +1000
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 96ms (Views: 48.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:34:34 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:34:34 +1000
+
+
+Started GET "/search/index" for 127.0.0.1 at 2014-05-25 20:34:59 +1000
+Processing by SearchController#index as HTML
+  Rendered search/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 77ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:35:00 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:35:00 +1000
+
+
+Started GET "/search/index" for 127.0.0.1 at 2014-05-25 20:37:00 +1000
+Processing by SearchController#index as HTML
+  [1m[36mSociety Load (2.0ms)[0m  [1mSELECT "societies".* FROM "societies"[0m
+  Rendered search/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 74ms (Views: 46.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:37:00 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:37:00 +1000
+
+
+Started GET "/societies/new" for 127.0.0.1 at 2014-05-25 20:37:11 +1000
+Processing by SocietiesController#new as HTML
+  Rendered societies/_form.html.erb (60.0ms)
+  Rendered societies/new.html.erb within layouts/application (68.0ms)
+Completed 200 OK in 118ms (Views: 108.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:37:11 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:37:11 +1000
+
+
+Started POST "/societies" for 127.0.0.1 at 2014-05-25 20:37:30 +1000
+Processing by SocietiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IQRS7b6CzjAn4Uz0LSiXUtQrvMYTgZ29gsMJnGHfsDA=", "society"=>{"society_name"=>"swimming club", "registration_number"=>"1234123412", "club_website"=>"1234", "club_nickname"=>"qwerqwer", "password"=>"[FILTERED]", "president_name"=>"wqerqwer", "president_phone_number"=>"qwerqwer", "president_email"=>"wqerwqer", "treasurer_name"=>"qwerqwer", "treasurer_phone_number"=>"qwerqwer", "treasurer_email"=>"qwerqwer", "club_biz_administrator_name"=>"qwerqwer", "club_biz_administrator_phone_number"=>"qwerqwer", "club_biz_administrator_email"=>"qwerqwer"}, "commit"=>"Create Society"}
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (47.0ms)[0m  [1mINSERT INTO "societies" ("club_biz_administrator_email", "club_biz_administrator_name", "club_biz_administrator_phone_number", "club_nickname", "club_website", "created_at", "password", "president_email", "president_name", "president_phone_number", "registration_number", "society_name", "treasurer_email", "treasurer_name", "treasurer_phone_number", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["club_biz_administrator_email", "qwerqwer"], ["club_biz_administrator_name", "qwerqwer"], ["club_biz_administrator_phone_number", "qwerqwer"], ["club_nickname", "qwerqwer"], ["club_website", "1234"], ["created_at", Sun, 25 May 2014 10:37:30 UTC +00:00], ["password", "qwerqwer"], ["president_email", "wqerwqer"], ["president_name", "wqerqwer"], ["president_phone_number", "qwerqwer"], ["registration_number", "1234123412"], ["society_name", "swimming club"], ["treasurer_email", "qwerqwer"], ["treasurer_name", "qwerqwer"], ["treasurer_phone_number", "qwerqwer"], ["updated_at", Sun, 25 May 2014 10:37:30 UTC +00:00]]
+  [1m[35m (7.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/societies/confirmation
+Completed 302 Found in 110ms (ActiveRecord: 55.0ms)
+
+
+Started GET "/societies/confirmation" for 127.0.0.1 at 2014-05-25 20:37:30 +1000
+Processing by SocietiesController#confirmation as HTML
+  Rendered societies/confirmation.html.erb within layouts/application (37.0ms)
+Completed 500 Internal Server Error in 61ms
+
+ActionView::Template::Error (undefined local variable or method `society_homepage_index_path' for #<#<Class:0x2d3a170>:0x1f60248>):
+    1: <h1> Society Registered </h1>
+    2: 
+    3: <%= link_to 'OK', society_homepage_index_path %>
+  app/views/societies/confirmation.html.erb:3:in `_app_views_societies_confirmation_html_erb__937229156_16771500'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (97.0ms)
+
+
+Started POST "/societies" for 127.0.0.1 at 2014-05-25 20:38:03 +1000
+Processing by SocietiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IQRS7b6CzjAn4Uz0LSiXUtQrvMYTgZ29gsMJnGHfsDA=", "society"=>{"society_name"=>"swimming club", "registration_number"=>"1234123412", "club_website"=>"1234", "club_nickname"=>"qwerqwer", "password"=>"[FILTERED]", "president_name"=>"wqerqwer", "president_phone_number"=>"qwerqwer", "president_email"=>"wqerwqer", "treasurer_name"=>"qwerqwer", "treasurer_phone_number"=>"qwerqwer", "treasurer_email"=>"qwerqwer", "club_biz_administrator_name"=>"qwerqwer", "club_biz_administrator_phone_number"=>"qwerqwer", "club_biz_administrator_email"=>"qwerqwer"}, "commit"=>"Create Society"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.0ms)[0m  INSERT INTO "societies" ("club_biz_administrator_email", "club_biz_administrator_name", "club_biz_administrator_phone_number", "club_nickname", "club_website", "created_at", "password", "president_email", "president_name", "president_phone_number", "registration_number", "society_name", "treasurer_email", "treasurer_name", "treasurer_phone_number", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["club_biz_administrator_email", "qwerqwer"], ["club_biz_administrator_name", "qwerqwer"], ["club_biz_administrator_phone_number", "qwerqwer"], ["club_nickname", "qwerqwer"], ["club_website", "1234"], ["created_at", Sun, 25 May 2014 10:38:03 UTC +00:00], ["password", "qwerqwer"], ["president_email", "wqerwqer"], ["president_name", "wqerqwer"], ["president_phone_number", "qwerqwer"], ["registration_number", "1234123412"], ["society_name", "swimming club"], ["treasurer_email", "qwerqwer"], ["treasurer_name", "qwerqwer"], ["treasurer_phone_number", "qwerqwer"], ["updated_at", Sun, 25 May 2014 10:38:03 UTC +00:00]]
+  [1m[36m (6.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/societies/confirmation
+Completed 302 Found in 59ms (ActiveRecord: 10.0ms)
+
+
+Started GET "/societies/confirmation" for 127.0.0.1 at 2014-05-25 20:38:03 +1000
+Processing by SocietiesController#confirmation as HTML
+  Rendered societies/confirmation.html.erb within layouts/application (35.0ms)
+Completed 500 Internal Server Error in 58ms
+
+ActionView::Template::Error (undefined local variable or method `society_homepage_index_path' for #<#<Class:0x2d3a170>:0x2e53f90>):
+    1: <h1> Society Registered </h1>
+    2: 
+    3: <%= link_to 'OK', society_homepage_index_path %>
+  app/views/societies/confirmation.html.erb:3:in `_app_views_societies_confirmation_html_erb__937229156_16771500'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (102.0ms)
+
+
+Started POST "/societies" for 127.0.0.1 at 2014-05-25 20:39:43 +1000
+Processing by SocietiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IQRS7b6CzjAn4Uz0LSiXUtQrvMYTgZ29gsMJnGHfsDA=", "society"=>{"society_name"=>"swimming club", "registration_number"=>"1234123412", "club_website"=>"1234", "club_nickname"=>"qwerqwer", "password"=>"[FILTERED]", "president_name"=>"wqerqwer", "president_phone_number"=>"qwerqwer", "president_email"=>"wqerwqer", "treasurer_name"=>"qwerqwer", "treasurer_phone_number"=>"qwerqwer", "treasurer_email"=>"qwerqwer", "club_biz_administrator_name"=>"qwerqwer", "club_biz_administrator_phone_number"=>"qwerqwer", "club_biz_administrator_email"=>"qwerqwer"}, "commit"=>"Create Society"}
+  [1m[35m (1.0ms)[0m  begin transaction
+  [1m[36mSQL (4.0ms)[0m  [1mINSERT INTO "societies" ("club_biz_administrator_email", "club_biz_administrator_name", "club_biz_administrator_phone_number", "club_nickname", "club_website", "created_at", "password", "president_email", "president_name", "president_phone_number", "registration_number", "society_name", "treasurer_email", "treasurer_name", "treasurer_phone_number", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["club_biz_administrator_email", "qwerqwer"], ["club_biz_administrator_name", "qwerqwer"], ["club_biz_administrator_phone_number", "qwerqwer"], ["club_nickname", "qwerqwer"], ["club_website", "1234"], ["created_at", Sun, 25 May 2014 10:39:43 UTC +00:00], ["password", "qwerqwer"], ["president_email", "wqerwqer"], ["president_name", "wqerqwer"], ["president_phone_number", "qwerqwer"], ["registration_number", "1234123412"], ["society_name", "swimming club"], ["treasurer_email", "qwerqwer"], ["treasurer_name", "qwerqwer"], ["treasurer_phone_number", "qwerqwer"], ["updated_at", Sun, 25 May 2014 10:39:43 UTC +00:00]]
+  [1m[35m (7.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/societies/confirmation
+Completed 302 Found in 57ms (ActiveRecord: 12.0ms)
+
+
+Started GET "/societies/confirmation" for 127.0.0.1 at 2014-05-25 20:39:43 +1000
+Processing by SocietiesController#confirmation as HTML
+  Rendered societies/confirmation.html.erb within layouts/application (36.0ms)
+Completed 500 Internal Server Error in 61ms
+
+ActionView::Template::Error (undefined local variable or method `society_homepage_index_path' for #<#<Class:0x2d3a170>:0x322fcf8>):
+    1: <h1> Society Registered </h1>
+    2: 
+    3: <%= link_to 'OK', society_homepage_index_path %>
+  app/views/societies/confirmation.html.erb:3:in `_app_views_societies_confirmation_html_erb__937229156_16771500'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (102.0ms)
+
+
+Started GET "/search/index" for 127.0.0.1 at 2014-05-25 20:40:32 +1000
+Processing by SearchController#index as HTML
+  [1m[36mSociety Load (2.0ms)[0m  [1mSELECT "societies".* FROM "societies"[0m
+  Rendered search/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 61ms (Views: 58.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:40:33 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:40:33 +1000
+
+
+Started GET "/search/index" for 127.0.0.1 at 2014-05-25 20:41:40 +1000
+Processing by SearchController#index as HTML
+  [1m[35mSociety Load (1.0ms)[0m  SELECT "societies".* FROM "societies"
+  Rendered search/index.html.erb within layouts/application (16.0ms)
+Completed 500 Internal Server Error in 160ms
+
+SyntaxError (D:/RubyMine 6.3.2/clubbiz/app/views/layouts/application.html.erb:82: syntax error, unexpected keyword_ensure, expecting keyword_end
+D:/RubyMine 6.3.2/clubbiz/app/views/layouts/application.html.erb:84: syntax error, unexpected end-of-input, expecting keyword_end):
+  actionpack (4.0.4) lib/action_view/template.rb:299:in `module_eval'
+  actionpack (4.0.4) lib/action_view/template.rb:299:in `compile'
+  actionpack (4.0.4) lib/action_view/template.rb:248:in `block in compile!'
+  actionpack (4.0.4) lib/action_view/template.rb:236:in `synchronize'
+  actionpack (4.0.4) lib/action_view/template.rb:236:in `compile!'
+  actionpack (4.0.4) lib/action_view/template.rb:142:in `block in render'
+  activesupport (4.0.4) lib/active_support/notifications.rb:161:in `instrument'
+  actionpack (4.0.4) lib/action_view/template.rb:141:in `render'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:61:in `render_with_layout'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:47:in `render_template'
+  actionpack (4.0.4) lib/action_view/renderer/template_renderer.rb:17:in `render'
+  actionpack (4.0.4) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionpack (4.0.4) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:127:in `_render_template'
+  actionpack (4.0.4) lib/action_controller/metal/streaming.rb:219:in `_render_template'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:120:in `render_to_body'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:33:in `render_to_body'
+  actionpack (4.0.4) lib/action_controller/metal/renderers.rb:26:in `render_to_body'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:97:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in `block (2 levels) in render'
+  activesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  D:/Ruby200/lib/ruby/2.0.0/benchmark.rb:296:in `realtime'
+  activesupport (4.0.4) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:41:in `block in render'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:84:in `cleanup_view_runtime'
+  activerecord (4.0.4) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:40:in `render'
+  actionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.0.4) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:413:in `_run__881924479__process_action__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/abstract_controller/callbacks.rb:17:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.0.4) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.0.4) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.0.4) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.0.4) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.0.4) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.0.4) lib/abstract_controller/base.rb:136:in `process'
+  actionpack (4.0.4) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.4) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.4) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.4) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.4) lib/action_dispatch/routing/route_set.rb:674:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.4) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.4) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.4) lib/active_record/migration.rb:373:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:373:in `_run__960490229__call__callbacks'
+  activesupport (4.0.4) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.4) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.0.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.0.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.4) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.4) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.0.4) lib/rails/engine.rb:511:in `call'
+  railties (4.0.4) lib/rails/application.rb:97:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:138:in `service'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/httpserver.rb:94:in `run'
+  D:/Ruby200/lib/ruby/2.0.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (6.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (293.0ms)
+
+
+Started GET "/search/index" for 127.0.0.1 at 2014-05-25 20:41:58 +1000
+Processing by SearchController#index as HTML
+  [1m[36mSociety Load (1.0ms)[0m  [1mSELECT "societies".* FROM "societies"[0m
+  Rendered search/index.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 234ms (Views: 231.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:41:58 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:41:58 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:42:00 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[35mSociety Load (1.0ms)[0m  SELECT "societies".* FROM "societies"
+  Rendered search/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 48ms (Views: 44.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:42:00 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:42:00 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:42:01 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[36mSociety Load (1.0ms)[0m  [1mSELECT "societies".* FROM "societies"[0m
+  Rendered search/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:42:02 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:42:02 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:43:03 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[35mSociety Load (1.0ms)[0m  SELECT "societies".* FROM "societies"
+  Rendered search/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 57ms (Views: 54.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:43:03 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:43:03 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:45:17 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  Rendered search/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 58ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:45:18 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:45:18 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=swi" for 127.0.0.1 at 2014-05-25 20:45:22 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"swi"}
+Completed 500 Internal Server Error in 23ms
+
+NoMethodError (undefined method `search' for #<Class:0x2e928a0>):
+  app/controllers/search_controller.rb:12:in `index'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (201.0ms)
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=swi" for 127.0.0.1 at 2014-05-25 20:47:05 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"swi"}
+  [1m[36mSociety Load (14.0ms)[0m  [1mSELECT "societies".* FROM "societies" WHERE (society_name LIKE '%swi%')[0m
+  Rendered search/index.html.erb within layouts/application (69.0ms)
+Completed 200 OK in 135ms (Views: 89.0ms | ActiveRecord: 17.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:47:06 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:47:06 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:47:09 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  Rendered search/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 40ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:47:09 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:47:09 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=s" for 127.0.0.1 at 2014-05-25 20:47:11 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"s"}
+  [1m[35mSociety Load (1.0ms)[0m  SELECT "societies".* FROM "societies" WHERE (society_name LIKE '%s%')
+  Rendered search/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 54ms (Views: 50.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:47:11 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:47:11 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 20:47:23 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 46ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:47:23 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:47:23 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=sw" for 127.0.0.1 at 2014-05-25 20:47:25 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"sw"}
+  [1m[36mSociety Load (1.0ms)[0m  [1mSELECT "societies".* FROM "societies" WHERE (society_name LIKE '%sw%')[0m
+  Rendered search/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:47:25 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:47:25 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:48:15 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  Rendered search/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 39ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:48:15 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:48:15 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:49:55 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 59ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:49:56 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:49:56 +1000
+
+
+Started GET "/events" for 127.0.0.1 at 2014-05-25 20:52:05 +1000
+Processing by EventsController#index as HTML
+  [1m[35mEvent Load (2.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered events/_show_all_events.html.erb (8.0ms)
+  Rendered events/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 85ms (Views: 55.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:52:06 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:52:06 +1000
+
+
+Started GET "/events/new" for 127.0.0.1 at 2014-05-25 20:52:09 +1000
+Processing by EventsController#new as HTML
+  Rendered events/_form.html.erb (223.0ms)
+  Rendered events/new.html.erb within layouts/application (251.0ms)
+Completed 200 OK in 305ms (Views: 298.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:52:10 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:52:10 +1000
+
+
+Started POST "/events" for 127.0.0.1 at 2014-05-25 20:52:32 +1000
+Processing by EventsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IQRS7b6CzjAn4Uz0LSiXUtQrvMYTgZ29gsMJnGHfsDA=", "event"=>{"title"=>"dancing event", "start_time(1i)"=>"2014", "start_time(2i)"=>"5", "start_time(3i)"=>"25", "start_time(4i)"=>"10", "start_time(5i)"=>"52", "finish_time(1i)"=>"2014", "finish_time(2i)"=>"5", "finish_time(3i)"=>"25", "finish_time(4i)"=>"10", "finish_time(5i)"=>"52", "venue"=>"asdfasdf", "event_type"=>"asdfasdf", "event_url"=>"asdfasdf", "max_num_tickets"=>"24", "ticket_price"=>"asdfasdf", "ticket_start_date_time(1i)"=>"2014", "ticket_start_date_time(2i)"=>"5", "ticket_start_date_time(3i)"=>"25", "ticket_start_date_time(4i)"=>"10", "ticket_start_date_time(5i)"=>"52", "ticket_end_date_time(1i)"=>"2014", "ticket_end_date_time(2i)"=>"5", "ticket_end_date_time(3i)"=>"25", "ticket_end_date_time(4i)"=>"10", "ticket_end_date_time(5i)"=>"52", "ticket_purchase_pickup_information"=>"asdfasdfasdfasdf"}, "commit"=>"Create Event"}
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (5.0ms)[0m  INSERT INTO "events" ("created_at", "event_type", "event_url", "finish_time", "max_num_tickets", "societies_shared_with", "start_time", "ticket_end_date_time", "ticket_price", "ticket_purchase_pickup_information", "ticket_start_date_time", "title", "updated_at", "venue") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Sun, 25 May 2014 10:52:32 UTC +00:00], ["event_type", "asdfasdf"], ["event_url", "asdfasdf"], ["finish_time", 2014-05-25 10:52:00 UTC], ["max_num_tickets", 24], ["societies_shared_with", nil], ["start_time", 2014-05-25 10:52:00 UTC], ["ticket_end_date_time", Sun, 25 May 2014 10:52:00 UTC +00:00], ["ticket_price", "asdfasdf"], ["ticket_purchase_pickup_information", "asdfasdfasdfasdf"], ["ticket_start_date_time", Sun, 25 May 2014 10:52:00 UTC +00:00], ["title", "dancing event"], ["updated_at", Sun, 25 May 2014 10:52:32 UTC +00:00], ["venue", "asdfasdf"]]
+  [1m[36m (6.0ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 71ms
+
+NameError (undefined local variable or method `society_homepage_index_path' for #<EventsController:0x2c2dc28>):
+  app/controllers/events_controller.rb:38:in `block (2 levels) in create'
+  app/controllers/events_controller.rb:36:in `create'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (211.0ms)
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 20:52:39 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:52:39 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:52:39 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 20:53:03 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 62ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:53:04 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:53:04 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:53:06 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[35mEvent Load (2.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered search/index.html.erb within layouts/application (61.0ms)
+Completed 500 Internal Server Error in 97ms
+
+ActionView::Template::Error (undefined method `society_name' for #<Event:0x2de8500>):
+    12: 
+    13: <% @events_data.each do |event_datum| %>
+    14:     <tr>
+    15:       <td><%= event_datum.society_name %></td>
+    16:       <td><%= event_datum.registration_number %></td>
+    17:     </tr>
+    18: <% end %>
+  app/views/search/index.html.erb:15:in `block in _app_views_search_index_html_erb__392058635_23653140'
+  app/views/search/index.html.erb:13:in `_app_views_search_index_html_erb__392058635_23653140'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (104.0ms)
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:55:32 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[36mEvent Load (2.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered search/index.html.erb within layouts/application (54.0ms)
+Completed 200 OK in 174ms (Views: 89.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:55:33 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:55:33 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:57:20 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered search/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 77ms (Views: 73.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:57:20 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:57:20 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:57:35 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered search/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 89ms (Views: 80.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:57:35 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:57:35 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:57:36 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered search/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:57:37 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:57:37 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:57:38 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered search/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:57:38 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:57:38 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:57:44 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered search/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:57:44 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:57:44 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:57:45 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered search/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:57:45 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:57:45 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:57:57 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered search/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 80ms (Views: 75.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:57:57 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:57:57 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:57:58 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered search/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 47ms (Views: 44.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:57:58 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:57:58 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:57:59 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered search/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 68ms (Views: 65.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:57:59 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:57:59 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:58:27 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered search/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 71ms (Views: 68.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:58:27 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:58:27 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:58:35 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered search/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 52ms (Views: 49.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:58:35 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:58:35 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:58:46 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered search/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 54ms (Views: 50.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:58:46 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:58:46 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:58:53 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered search/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 93ms (Views: 89.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:58:53 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:58:53 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=" for 127.0.0.1 at 2014-05-25 20:59:00 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>""}
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered search/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 65ms (Views: 62.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:59:00 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:59:00 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=&clubname=&event=" for 127.0.0.1 at 2014-05-25 20:59:03 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "clubname"=>"", "event"=>""}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered search/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 50ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 20:59:03 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 20:59:03 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=sw&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:00:28 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"sw", "clubname"=>"", "event"=>""}
+  [1m[36mSociety Load (2.0ms)[0m  [1mSELECT "societies".* FROM "societies" WHERE (society_name LIKE '%sw%')[0m
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered search/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 117ms (Views: 97.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=sw&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:00:28 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"sw", "clubname"=>"", "event"=>""}
+  [1m[36mSociety Load (1.0ms)[0m  [1mSELECT "societies".* FROM "societies" WHERE (society_name LIKE '%sw%')[0m
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered search/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 55ms (Views: 51.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:00:29 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:00:29 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:00:51 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "clubname"=>"", "event"=>""}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered search/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 48ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:00:51 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:00:51 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:03:40 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "clubname"=>"", "event"=>""}
+  [1m[35mEvent Load (2.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered search/index.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 125ms (Views: 92.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:03:41 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:03:41 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=&clubname=sw&event=" for 127.0.0.1 at 2014-05-25 21:03:43 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "clubname"=>"sw", "event"=>""}
+Completed 500 Internal Server Error in 20ms
+
+NoMethodError (undefined method `search' for #<Class:0x2cbcad0>):
+  app/controllers/search_controller.rb:10:in `index'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (160.0ms)
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=&clubname=sw&event=" for 127.0.0.1 at 2014-05-25 21:03:55 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "clubname"=>"sw", "event"=>""}
+  [1m[36mSociety Load (3.0ms)[0m  [1mSELECT "societies".* FROM "societies" WHERE (society_name LIKE '%sw%')[0m
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered search/index.html.erb within layouts/application (156.0ms)
+Completed 200 OK in 310ms (Views: 193.0ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:03:56 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:03:56 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:04:00 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "clubname"=>"", "event"=>""}
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events"[0m
+  Rendered search/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 49ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:04:00 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:04:00 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=sw&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:04:02 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"sw", "clubname"=>"", "event"=>""}
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events"
+  Rendered search/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 47ms (Views: 45.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:04:03 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:04:03 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=sw&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:05:24 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"sw", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 70ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:05:25 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:05:25 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=sw&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:05:26 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"sw", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:05:26 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:05:26 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=sw&clubname=sw&event=" for 127.0.0.1 at 2014-05-25 21:05:27 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"sw", "clubname"=>"sw", "event"=>""}
+  [1m[36mSociety Load (2.0ms)[0m  [1mSELECT "societies".* FROM "societies" WHERE (society_name LIKE '%sw%')[0m
+  Rendered search/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 116ms (Views: 98.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:05:28 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:05:28 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=sw&clubname=&event=ni" for 127.0.0.1 at 2014-05-25 21:05:31 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"sw", "clubname"=>"", "event"=>"ni"}
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events" WHERE (society_name LIKE '%ni%')
+SQLite3::SQLException: no such column: society_name: SELECT "events".* FROM "events"  WHERE (society_name LIKE '%ni%')
+  Rendered search/index.html.erb within layouts/application (18.0ms)
+Completed 500 Internal Server Error in 43ms
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: society_name: SELECT "events".* FROM "events"  WHERE (society_name LIKE '%ni%')):
+    22: <% end %>
+    23: 
+    24: 
+    25: <% @events_data.each do |event_datum| %>
+    26:     <tr>
+    27:       <td><%= event_datum.title %></td>
+    28:       <td><%= event_datum.start_time %></td>
+  app/views/search/index.html.erb:25:in `_app_views_search_index_html_erb__392058635_29411124'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (105.0ms)
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=sw&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:05:59 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"sw", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 42ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:05:59 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:05:59 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=sw&clubname=&event=s" for 127.0.0.1 at 2014-05-25 21:06:05 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"sw", "clubname"=>"", "event"=>"s"}
+  [1m[36mEvent Load (2.0ms)[0m  [1mSELECT "events".* FROM "events" WHERE (society_name LIKE '%s%')[0m
+SQLite3::SQLException: no such column: society_name: SELECT "events".* FROM "events"  WHERE (society_name LIKE '%s%')
+  Rendered search/index.html.erb within layouts/application (19.0ms)
+Completed 500 Internal Server Error in 44ms
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: society_name: SELECT "events".* FROM "events"  WHERE (society_name LIKE '%s%')):
+    22: <% end %>
+    23: 
+    24: 
+    25: <% @events_data.each do |event_datum| %>
+    26:     <tr>
+    27:       <td><%= event_datum.title %></td>
+    28:       <td><%= event_datum.start_time %></td>
+  app/views/search/index.html.erb:25:in `_app_views_search_index_html_erb__392058635_29411124'
+
+
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (4.0ms)
+  Rendered D:/Ruby200/lib/ruby/gems/2.0.0/gems/actionpack-4.0.4/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (105.0ms)
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=sw&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:07:15 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"sw", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 83ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:07:16 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:07:16 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=sw&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:07:17 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"sw", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 81ms (Views: 77.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:07:18 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:07:18 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=sw&clubname=&event=s" for 127.0.0.1 at 2014-05-25 21:07:19 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"sw", "clubname"=>"", "event"=>"s"}
+  [1m[35mEvent Load (4.0ms)[0m  SELECT "events".* FROM "events" WHERE (title LIKE '%s%')
+  Rendered search/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 53ms (Views: 47.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:07:19 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:07:20 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=sw&clubname=&event=c" for 127.0.0.1 at 2014-05-25 21:07:22 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"sw", "clubname"=>"", "event"=>"c"}
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT "events".* FROM "events" WHERE (title LIKE '%c%')[0m
+  Rendered search/index.html.erb within layouts/application (50.0ms)
+Completed 200 OK in 93ms (Views: 87.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:07:22 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:07:22 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:08:52 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 63ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:08:52 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:08:52 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=&clubname=s&event=" for 127.0.0.1 at 2014-05-25 21:08:54 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "clubname"=>"s", "event"=>""}
+  [1m[35mSociety Load (2.0ms)[0m  SELECT "societies".* FROM "societies" WHERE (society_name LIKE '%s%')
+  Rendered search/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 117ms (Views: 96.0ms | ActiveRecord: 5.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:08:55 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:08:55 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=&clubname=&event=s" for 127.0.0.1 at 2014-05-25 21:08:57 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "clubname"=>"", "event"=>"s"}
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT "events".* FROM "events" WHERE (title LIKE '%s%')[0m
+  Rendered search/index.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 53ms (Views: 50.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:08:57 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:08:57 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=&clubname=&event=c" for 127.0.0.1 at 2014-05-25 21:09:00 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "clubname"=>"", "event"=>"c"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" WHERE (title LIKE '%c%')
+  Rendered search/index.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 89ms (Views: 84.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:09:00 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:09:00 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=&clubname=e&event=c" for 127.0.0.1 at 2014-05-25 21:09:03 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "clubname"=>"e", "event"=>"c"}
+  [1m[36mSociety Load (1.0ms)[0m  [1mSELECT "societies".* FROM "societies" WHERE (society_name LIKE '%e%')[0m
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" WHERE (title LIKE '%c%')
+  Rendered search/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 58ms (Views: 55.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:09:03 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:09:03 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=&clubname=s&event=c" for 127.0.0.1 at 2014-05-25 21:09:06 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "clubname"=>"s", "event"=>"c"}
+  [1m[36mSociety Load (1.0ms)[0m  [1mSELECT "societies".* FROM "societies" WHERE (society_name LIKE '%s%')[0m
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events" WHERE (title LIKE '%c%')
+  Rendered search/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 57ms (Views: 53.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:09:06 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:09:06 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=&clubname=c&event=c" for 127.0.0.1 at 2014-05-25 21:09:13 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "clubname"=>"c", "event"=>"c"}
+  [1m[36mSociety Load (1.0ms)[0m  [1mSELECT "societies".* FROM "societies" WHERE (society_name LIKE '%c%')[0m
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" WHERE (title LIKE '%c%')
+  Rendered search/index.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 59ms (Views: 56.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:09:13 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:09:13 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=c&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:09:16 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"c", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:09:17 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:09:17 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=s&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:09:19 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"s", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:09:19 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:09:19 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=s&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:09:23 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"s", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:09:23 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:09:23 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=c&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:09:25 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"c", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:09:25 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:09:25 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=s&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:09:27 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"s", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:09:28 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:09:28 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=s&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:11:01 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"s", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 81ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:11:02 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:11:02 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=s&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:11:03 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"s", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:11:03 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:11:03 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=c&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:11:06 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"c", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:11:06 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:11:06 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=s&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:11:08 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"s", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 41ms (Views: 38.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:11:08 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:11:08 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=s&clubname=s&event=" for 127.0.0.1 at 2014-05-25 21:11:09 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"s", "clubname"=>"s", "event"=>""}
+  [1m[36mSociety Load (2.0ms)[0m  [1mSELECT "societies".* FROM "societies" WHERE (society_name LIKE '%s%')[0m
+  Rendered search/index.html.erb within layouts/application (58.0ms)
+Completed 200 OK in 99ms (Views: 93.0ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:11:09 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:11:09 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=s&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:11:12 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"s", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 88ms (Views: 86.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:11:12 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:11:12 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=s&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:19:33 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"s", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 87ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:19:34 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:19:34 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=s&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:20:09 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"s", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 82ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:20:09 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:20:09 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=c&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:20:11 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"c", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 42ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:20:11 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:20:11 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=s&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:20:14 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"s", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 46ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:20:14 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:20:14 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=s&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:50:59 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"s", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 89ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:50:59 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:51:00 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=s&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:51:00 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"s", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 64ms (Views: 57.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:51:01 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:51:01 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=s&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:52:48 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"s", "clubname"=>"", "event"=>""}
+  [1m[35mSociety Load (3.0ms)[0m  SELECT "societies".* FROM "societies" WHERE (society_name LIKE '%s%')
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT "events".* FROM "events" WHERE (title LIKE '%s%')[0m
+  Rendered search/index.html.erb within layouts/application (79.0ms)
+Completed 200 OK in 180ms (Views: 125.0ms | ActiveRecord: 7.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:52:48 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:52:48 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=c&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:52:51 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"c", "clubname"=>"", "event"=>""}
+  [1m[35mSociety Load (1.0ms)[0m  SELECT "societies".* FROM "societies" WHERE (society_name LIKE '%c%')
+  [1m[36mEvent Load (0.0ms)[0m  [1mSELECT "events".* FROM "events" WHERE (title LIKE '%c%')[0m
+  Rendered search/index.html.erb within layouts/application (62.0ms)
+Completed 200 OK in 105ms (Views: 100.0ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:52:51 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:52:52 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=c&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:53:30 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"c", "clubname"=>"", "event"=>""}
+  [1m[35mSociety Load (1.0ms)[0m  SELECT "societies".* FROM "societies" WHERE (society_name LIKE '%c%')
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT "events".* FROM "events" WHERE (title LIKE '%c%')[0m
+  Rendered search/index.html.erb within layouts/application (30.0ms)
+Completed 200 OK in 94ms (Views: 88.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:53:30 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:53:30 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:53:36 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 44ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:53:36 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:53:36 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=&clubname=s&event=" for 127.0.0.1 at 2014-05-25 21:53:37 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "clubname"=>"s", "event"=>""}
+  [1m[35mSociety Load (1.0ms)[0m  SELECT "societies".* FROM "societies" WHERE (society_name LIKE '%s%')
+  Rendered search/index.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 59ms (Views: 56.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:53:37 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:53:38 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=&clubname=c&event=" for 127.0.0.1 at 2014-05-25 21:53:39 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "clubname"=>"c", "event"=>""}
+  [1m[36mSociety Load (1.0ms)[0m  [1mSELECT "societies".* FROM "societies" WHERE (society_name LIKE '%c%')[0m
+  Rendered search/index.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 51ms (Views: 47.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:53:39 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:53:39 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=&clubname=c&event=c" for 127.0.0.1 at 2014-05-25 21:53:41 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "clubname"=>"c", "event"=>"c"}
+  [1m[35mSociety Load (1.0ms)[0m  SELECT "societies".* FROM "societies" WHERE (society_name LIKE '%c%')
+  [1m[36mEvent Load (1.0ms)[0m  [1mSELECT "events".* FROM "events" WHERE (title LIKE '%c%')[0m
+  Rendered search/index.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 62ms (Views: 58.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:53:41 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:53:42 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=&clubname=&event=c" for 127.0.0.1 at 2014-05-25 21:53:43 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "clubname"=>"", "event"=>"c"}
+  [1m[35mEvent Load (0.0ms)[0m  SELECT "events".* FROM "events" WHERE (title LIKE '%c%')
+  Rendered search/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 54ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:53:44 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:53:44 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:53:45 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 55ms (Views: 53.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:53:46 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:53:46 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=c&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:53:47 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"c", "clubname"=>"", "event"=>""}
+  [1m[36mSociety Load (1.0ms)[0m  [1mSELECT "societies".* FROM "societies" WHERE (society_name LIKE '%c%')[0m
+  [1m[35mEvent Load (1.0ms)[0m  SELECT "events".* FROM "events" WHERE (title LIKE '%c%')
+  Rendered search/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 76ms (Views: 71.0ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:53:47 +1000
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:53:47 +1000
+
+
+Started GET "/search/index?utf8=%E2%9C%93&search=&clubname=&event=" for 127.0.0.1 at 2014-05-25 21:53:49 +1000
+Processing by SearchController#index as HTML
+  Parameters: {"utf8"=>"✓", "search"=>"", "clubname"=>"", "event"=>""}
+  Rendered search/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 45ms (Views: 43.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:53:49 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:53:49 +1000
+
+
+Started GET "/startuppage" for 127.0.0.1 at 2014-05-25 21:53:50 +1000
+Processing by StartuppageController#index as HTML
+  Rendered startuppage/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 51ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/Head_logo2.png" for 127.0.0.1 at 2014-05-25 21:53:50 +1000
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-05-25 21:53:50 +1000

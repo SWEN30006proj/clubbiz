@@ -44,12 +44,21 @@
         </ul>
       </li>
     </ul>
-    <form class="navbar-form navbar-left" role="search">
-      <div class="form-group">
-        <input type="text" class="form-control" placeholder="Search Event/Society">
-      </div>
-      <button type="submit" class="btn btn-default">Submit</button>
-    </form>
+
+
+    <%= form_tag search_index_path, method: :get do %>
+        <%= text_field_tag :search, params[:search] %>
+        <%= submit_tag "Search", :name => nil %>
+    <% end %>
+
+
+    <% if signed_in? %>
+        Signed in as <%=current_student.firstname%>. If this is not you?
+        <%=link_to "Sign out", destroy_student_session_path,:method => :delete%>
+    <%else%>
+
+    <%end%>
+
     <ul class="nav navbar-nav navbar-right">
       <li><a href="javascript:void(0)">Welcome Guest</a></li>
       <li class="dropdown">
