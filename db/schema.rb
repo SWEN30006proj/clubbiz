@@ -11,7 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140525063059) do
+ActiveRecord::Schema.define(version: 20140525103028) do
+
+  create_table "events", force: true do |t|
+    t.string   "title"
+    t.time     "start_time"
+    t.time     "finish_time"
+    t.string   "venue"
+    t.string   "event_type"
+    t.string   "event_url"
+    t.string   "image_urls"
+    t.integer  "max_num_tickets"
+    t.string   "ticket_price"
+    t.datetime "ticket_start_date_time"
+    t.datetime "ticket_end_date_time"
+    t.string   "ticket_purchase_pickup_information"
+    t.string   "societies_shared_with"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "people", force: true do |t|
     t.text     "name"
@@ -25,6 +43,30 @@ ActiveRecord::Schema.define(version: 20140525063059) do
     t.integer  "member_id"
     t.integer  "ticket_type"
     t.integer  "ticket_quantity"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "searches", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "societies", force: true do |t|
+    t.string   "society_name"
+    t.string   "registration_number"
+    t.string   "club_website"
+    t.string   "club_nickname"
+    t.string   "password"
+    t.string   "president_name"
+    t.string   "president_phone_number"
+    t.string   "president_email"
+    t.string   "treasurer_name"
+    t.string   "treasurer_phone_number"
+    t.string   "treasurer_email"
+    t.string   "club_biz_administrator_name"
+    t.string   "club_biz_administrator_phone_number"
+    t.string   "club_biz_administrator_email"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

@@ -1,15 +1,8 @@
-<h1>welcome to the clubbiz  </h1>
-<h1>this is the startup page  </h1>
+<h1>Welcome to the clubbiz  </h1>
+<h2>This is the startup page  </h2>
 
 
 
 
-    <% if signed_in? %>
-        Signed in as <%=current_student.firstname%>. If this is not you?
-        <%=link_to "Sign out", destroy_student_session_path,:method => :delete%>
-    <%else%>
 
-        <%= link_to "New Sign up", new_student_registration_path %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-        <%= link_to "Sign in", new_student_session_path%>
-    <%end%>
 

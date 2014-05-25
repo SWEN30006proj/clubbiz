@@ -1,0 +1,45 @@
+<h1> This is the search page, do you advanced search here</h1>
+
+Search by keywords &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp&nbsp&nbsp
+
+Search by clubnam&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+
+
+Search by events
+<%= form_tag search_index_path, method: :get do %>
+    <%= text_field_tag :search, params[:search] %>
+    <%= text_field_tag :clubname, params[:clubname] %>
+    <%= text_field_tag :event, params[:event] %>
+    <%= submit_tag "Search", :name => nil %>
+<%end%>
+
+
+<% @clubs_data1.each do |clubs_datum| %>
+    <tr>
+      <td><%= clubs_datum.society_name %></td><br>
+      <td><%= clubs_datum.registration_number %></td><br>
+    </tr><br>
+<% end %>
+
+
+<% @events_data1.each do |event_datum| %>
+    <tr>
+      <td><%= event_datum.title %></td><br>
+      <td><%= event_datum.start_time %></td><br>
+    </tr><br>
+<% end %>
+<% @clubs_data.each do |clubs_datum| %>
+    <tr>
+      <td><%= clubs_datum.society_name %></td><br>
+      <td><%= clubs_datum.registration_number %></td><br>
+    </tr><br>
+<% end %>
+
+
+<% @events_data.each do |event_datum| %>
+    <tr>
+      <td><%= event_datum.title %></td><br>
+      <td><%= event_datum.start_time %></td><br>
+    </tr><br>
+<% end %>
+
