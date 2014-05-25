@@ -10,4 +10,8 @@ class HomePageController < ApplicationController
 
   def society_edit
   end
+
+  def index
+
+  end
 end

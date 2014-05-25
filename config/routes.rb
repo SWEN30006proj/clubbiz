@@ -3,6 +3,8 @@ Clubbiz::Application.routes.draw do
   get "home_page/student_edit"
   get "home_page/society_view"
   get "home_page/society_edit"
+  #get "index", to: 'home_page#index', as:'index'
+  root 'home_page#index'
   resources :reservations
   #resources :people
   get 'reservations/view_by_member/:id', to: 'reservations#view_by_member', as: 'view_by_member'
@@ -16,7 +18,7 @@ Clubbiz::Application.routes.draw do
 
   devise_for :students
   resources :startuppage
- resources :studenthomepage
+  resources :studenthomepage
 
 
   resources :maintopics do

@@ -9,6 +9,7 @@
   <style>
 
   </style>
+  <%= javascript_include_tag :defaults %>
   <!-- <%= stylesheet_link_tag "application" %> -->
   <link href="/assets/application.css?body=1" media="screen" rel="stylesheet" />
   <script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
@@ -25,7 +26,7 @@
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
-    <a class="navbar-brand" href="javascript:void(0)"><%= image_tag("Head_logo2.png", class:"header_logo", :alt => "Head Logo") %></a>
+    <a class="navbar-brand" href="/index.html"><%= image_tag("Head_logo2.png", class:"header_logo", :alt => "Head Logo") %></a>
   </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -51,30 +52,55 @@
       <button type="submit" class="btn btn-default">Submit</button>
     </form>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="javascript:void(0)">Welcome Guest</a></li>
+      <% if signed_in?
+           @name = current_student.firstname + " " + current_student.lastname
+        else
+           @name = "Guest"
+        end
+      %>
+      <li><a href="javascript:void(0)">Welcome <%=@name%></a></li>
       <li class="dropdown">
-        <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
-        <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-          <!-- Login form here -->
-          <!-- <form action="/students/sign_in" method="post" accept-charset="UTF-8">
-             <input id="user_username" style="margin-bottom: 15px;" type="text" name="user[username]" size="30" placeholder="Username"/>
-             <input id="user_password" style="margin-bottom: 15px;" type="password" name="user[password]" size="30" placeholder="Password"/>
-             <input id="user_remember_me" style="float: left; margin-right: 10px;" type="checkbox" name="user[remember_me]" value="1" />
-             <label class="string optional" for="user_remember_me"> Remember me</label>
-          </form>-->
-          <a href="/students/sign_in" ><input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="" name="commit" value="Sign In" /> </a>
-          <br/>
-          <br>
-          <!--<form action="javascript:void(0)" method="post" accept-charset="UTF-8">
-            <input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Register" />
-          </form>-->
-          <a href="/students/sign_up" ><input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Register" /> </a>
+        <% unless signed_in?%>
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign In <strong class="caret"></strong></a>
+          <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+            <!-- Login form here -->
+            <!-- <form action="/students/sign_in" method="post" accept-charset="UTF-8">
+               <input id="user_username" style="margin-bottom: 15px;" type="text" name="user[username]" size="30" placeholder="Username"/>
+               <input id="user_password" style="margin-bottom: 15px;" type="password" name="user[password]" size="30" placeholder="Password"/>
+               <input id="user_remember_me" style="float: left; margin-right: 10px;" type="checkbox" name="user[remember_me]" value="1" />
+               <label class="string optional" for="user_remember_me"> Remember me</label>
+            </form>-->
 
-        </div>
+            <a href="/students/sign_in" ><input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="" name="commit" value="Sign In" /> </a>
+            <br/>
+            <br/>
+            <!--<form action="javascript:void(0)" method="post" accept-charset="UTF-8">
+              <input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Register" />
+            </form>-->
+            <a href="/students/sign_up" ><input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Register" /> </a>
+            <br/>
+            <br/>
+
+          </div>
+          <%else%>
+          <a class="dropdown-toggle" href="#" data-toggle="dropdown">Sign Out <strong class="caret"></strong></a>
+          <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
+            <a href=<%=destroy_student_session_path%> ><input class="btn btn-primary" style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Sign out" /> </a>
+            <br/>
+            <br/>
+          </div>
+          <%end%>
       </li>
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>
+
+<% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>
 
 <%= yield %>
 
