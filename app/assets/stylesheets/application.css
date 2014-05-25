@@ -18,6 +18,16 @@ img.header_logo {
     width: auto;
 }
 
+body{padding-top:30px;}
+
+.glyphicon {  margin-bottom: 10px;margin-right: 10px;}
+
+small {
+    display: block;
+    line-height: 1.428571429;
+    color: #999;
+}
+
 .navbar-default {
     background-color: #008193;
     border-color: #005662;

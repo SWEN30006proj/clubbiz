@@ -3,7 +3,7 @@ class ReservationsController < ApplicationController
 
   #GET /reservations/view_by_member/1
   def view_by_member
-    @reservations = Reservation.where(member_id: 12)
+    @reservations = Reservation.where(member_id: 12) #set member_id here when logged in
   end
 
   # GET /reservations
