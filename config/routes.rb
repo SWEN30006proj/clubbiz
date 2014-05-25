@@ -20,6 +20,7 @@ Clubbiz::Application.routes.draw do
 
   get 'search/index'
   get 'search/list'
+  get 'search/eventlist'
 
 
   resources :maintopics do

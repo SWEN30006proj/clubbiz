@@ -1,0 +1,26 @@
+<h1> This is the list of clubs </h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Title</th>
+    <th>Start Time</th>
+    <th>Tickets Price</th>
+    <th>Societies shared with</th>
+    <th colspan="23"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @events_data_all.each do |events_datum| %>
+      <tr>
+        <td><%= events_datum.title%></td>
+        <td><%= events_datum.start_time %></td>
+        <td><%= events_datum.ticket_price %></td>
+        <td><%= events_datum.societies_shared_with %></td>
+        <br>
+      </tr><br>
+  <% end %>
+  </tbody>
+</table>
+
