@@ -1,0 +1,73 @@
+<%= form_for(@society) do |f| %>
+  <% if @society.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@society.errors.count, "error") %> prohibited this society from being saved:</h2>
+
+      <ul>
+      <% @society.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :society_name %><br>
+    <%= f.text_field :society_name %>
+  </div>
+  <div class="field">
+    <%= f.label :registration_number %><br>
+    <%= f.text_field :registration_number %>
+  </div>
+  <div class="field">
+    <%= f.label :club_website %><br>
+    <%= f.text_field :club_website %>
+  </div>
+  <div class="field">
+    <%= f.label :club_nickname %><br>
+    <%= f.text_field :club_nickname %>
+  </div>
+  <div class="field">
+    <%= f.label :password %><br>
+    <%= f.text_field :password %>
+  </div>
+  <div class="field">
+    <%= f.label :president_name %><br>
+    <%= f.text_field :president_name %>
+  </div>
+  <div class="field">
+    <%= f.label :president_phone_number %><br>
+    <%= f.text_field :president_phone_number %>
+  </div>
+  <div class="field">
+    <%= f.label :president_email %><br>
+    <%= f.text_field :president_email %>
+  </div>
+  <div class="field">
+    <%= f.label :treasurer_name %><br>
+    <%= f.text_field :treasurer_name %>
+  </div>
+  <div class="field">
+    <%= f.label :treasurer_phone_number %><br>
+    <%= f.text_field :treasurer_phone_number %>
+  </div>
+  <div class="field">
+    <%= f.label :treasurer_email %><br>
+    <%= f.text_field :treasurer_email %>
+  </div>
+  <div class="field">
+    <%= f.label :club_biz_administrator_name %><br>
+    <%= f.text_field :club_biz_administrator_name %>
+  </div>
+  <div class="field">
+    <%= f.label :club_biz_administrator_phone_number %><br>
+    <%= f.text_field :club_biz_administrator_phone_number %>
+  </div>
+  <div class="field">
+    <%= f.label :club_biz_administrator_email %><br>
+    <%= f.text_field :club_biz_administrator_email %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
